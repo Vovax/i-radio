@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <title>HTML5 Audio Tutorial</title>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <title>iRadio</title>
+    <!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -13,22 +12,27 @@
     <script type="text/javascript" src="js/html5slider.js"></script>
 </head>
 <body>
-    <h1>Audio Player</h1>
- 
-    <div class="container gradient">
-         
-        <img class="cover" src="images/cover1.jpg" alt="" style="width: 400px">
- 
-        <div class="player gradient">
- 
-            <a class="button gradient" id="play" href="" title=""></a>
-            <a class="button gradient" id="mute" href="" title=""></a>
-
-                <!--<input type="range" id="seek" value="0" max=""/>-->
-     
-            <a class="button gradient" id="close" href="" title=""></a>
+    <header class="header">
+        <div class="links">
+            <a href="" class="link_button">Deep Fm</a>
+            <a href="#" class="link_button">Chill Fm</a>
+            <a href="#" class="link_button">Lounge Fm</a>
+            <a href="#" class="link_button">Country Fm</a>
         </div>
-    </div>
+    </header>
+    <main class="content">
+        <div class="logo"><img src="images/iradio2.png"/></div>
+        <!--<h1>iRadio Fm</h1>-->
+        <div class="container gradient">
+            <img class="cover" src="images/cover1.jpg" alt="" style="width: 400px">
+            <div class="player gradient">
+                <a class="button gradient" id="play" href="" title=""></a>
+                <a class="button gradient" id="mute" href="" title=""></a>
+                    <!--<input type="range" id="seek" value="0" max=""/>-->
+                <a class="button gradient" id="close" href="" title=""></a>
+            </div>
+        </div>
+    </main>
     <div class="server">
         <!--<audio controls autobuffer>-->
         <!--    <source src="http://185.33.22.15:11006" />-->
