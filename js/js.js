@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	container = $('.container');
+	container = $('.player-content');
 	cover = $('.cover');
 	play = $('#play');
 	pause = $('#pause');
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		song.play();
 
-		$(this).replaceWith('<a class="button gradient" id="pause" href="" title=""></a>');
+		$(this).replaceWith('<a class="play-btn gradient" id="pause" href="" title=""><i class="fa fa-player fa-pause"></i></a>');
 		container.addClass('containerLarge');
 		cover.addClass('coverLarge');
 		$('#close').fadeIn(300);
@@ -34,21 +34,21 @@ $(document).ready(function() {
 	pause.live('click', function(e) {
 		e.preventDefault();
 		song.pause();
-		$(this).replaceWith('<a class="button gradient" id="play" href="" title=""></a>');
+		$(this).replaceWith('<a class="play-btn gradient" id="play" href="" title=""><i class="fa fa-player fa-play"></i></a>');
 
 	});
 
 	mute.live('click', function(e) {
 		e.preventDefault();
 		song.volume = 0;
-		$(this).replaceWith('<a class="button gradient" id="muted" href="" title=""></a>');
+		$(this).replaceWith('<a class="play-btn gradient" id="muted" href="" title=""><i class="fa fa-player fa-volume-off"></i></a>');
 
 	});
 
 	muted.live('click', function(e) {
 		e.preventDefault();
 		song.volume = 1;
-		$(this).replaceWith('<a class="button gradient" id="mute" href="" title=""></a>');
+		$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-player fa-volume-up"></a>');
 
 	});
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
 		cover.removeClass('coverLarge');
 		song.pause();
 		song.currentTime = 0;
-		$('#pause').replaceWith('<a class="button gradient" id="play" href="" title=""></a>');
+		$('#pause').replaceWith('<a class="play-btn gradient" id="play" href="" title=""><i class="fa fa-player fa-play"></i></a>');
 		$('#close').fadeOut(300);
 	});
 
