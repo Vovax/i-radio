@@ -1,0 +1,99 @@
+@media screen and (max-width:599px) {
+	.header {
+	    height: 60px;
+	}
+	.links {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+		
+	}
+	.links ul li {
+	    margin-bottom: 15px;
+	}
+	
+	.links ul li a {
+	    margin-right: 0;
+	}
+	a.link_button {
+	    padding: 3px 5px;
+	}
+	
+	.container-fluid {
+	    /*padding-top: 10px;*/
+	}
+	
+	.title-logo {
+	    padding-top: 0;
+	}
+	
+	.play-window {
+	    padding-top: 0;
+	}
+	
+	.player-content {
+	    height: 50px;
+        width: auto;
+        /* padding: 0px; */
+        position: absolute;
+        left: 60px;
+        right: 60px;
+	}
+	
+	.player {
+	    padding: 0px;
+        left: 10px;
+        right: 10px;
+        height: 30px;
+        bottom: 9px;
+	}
+	
+	.play-btn {
+	    width: 24px;
+        height: 23px;
+	    margin-left: 3px;
+        margin-top: 3px;
+        margin-right: 3px;
+	}
+	
+	.fa-play {
+	    font-size: 14px;
+        margin-left: -4px;
+	}
+	
+	.fa-pause {
+	    font-size: 15px;
+	    margin-left: -5px;
+	}
+	
+	.fa-volume-up {
+	    font-size: 18px;
+        margin-top: 3px;
+	}
+	
+	.fa-volume-off {
+	     font-size: 20px;
+        margin-left: -4px;
+        margin-top: 1px;
+	}
+	
+	.fa-stop {
+	    font-size: 15px;
+	    margin-top: 3px;
+	}
+	
+	.author {
+	    font-size: 10px;
+	}
+	
+	.fa-soc {
+	    font-size: 10px;
+	    font-size: 20px;
+        margin-top: 5px;
+	}
+	
+	.coverLarge {
+	    /*height: 190px;*/
+	    display: none;
+	}
+}

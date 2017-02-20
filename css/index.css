@@ -29,18 +29,25 @@ body {
 }
 
 .header {
-	position: relative;
-	left: 30px;
-	max-width: 100%;
+	/*position: relative;*/
+	/*left: 30px;*/
+	/*max-width: 100%;*/
 }
 
 .container-fluid {
 	/*padding-top: 10px;*/
 }
 
+/*@media screen and (max-width:599px) {*/
+/*	nav li {*/
+/*		display: inline;*/
+/*		width: 200px;*/
+/*	}*/
+/*}*/
+
 .links {
 	padding-top: 15px;
-    padding-bottom: 20px;
+    padding-left: 30px;
 }
 .links ul {
 	list-style: none;
@@ -53,7 +60,7 @@ body {
 	display: inline-block;
 }
 
-.links a {
+.links ul li a {
 	margin-right: 5px;
 	text-decoration: none;
 	/*color: #fff;*/
