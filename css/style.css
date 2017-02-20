@@ -11,7 +11,8 @@ html {
 
 html, body {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
+    min-height: 100%;
 }
 
 body {
@@ -245,50 +246,33 @@ h1 {
     margin-left: -5px;
 }
 
-input[type='range'] { 
-	display: block;
-	margin-top: -76px;
-	height: 1px;
-	margin-top: -5px;
-	width: auto;
-}
-
-/*#play {*/
-/*	background-position: 6px 5px;*/
-/*	background: url(../images/vol-up.png);*/
-/*}*/
-
-/*#pause {*/
-/*	background-position: -32px 5px;*/
-/*}*/
-
-/*#mute {*/
-/*	background: url(../images/vol-up.png) no-repeat center;*/
-/*    background-size: 28px;*/
-/*}*/
-
-/*#muted {*/
-/*	background-position: -106px 5px;*/
+/*input[type='range'] { */
+/*	display: block;*/
+/*	margin-top: -76px;*/
+/*	height: 1px;*/
+/*	margin-top: -5px;*/
+/*	width: auto;*/
 /*}*/
 
 #close {
 	float: right;
-	background-position: -146px 5px;
 	display: none;
 }
 
-.volume {
-	position: absolute;
-	height: 100px;
-	width: 34px;
-	border: 1px solid black;
-	background-color: #242323;
-	top: -97px;
-	display: none;
-}
-input{
-	display:none\9!important;
-}
+/*.volume {*/
+/*	position: absolute;*/
+/*	height: 100px;*/
+/*	width: 34px;*/
+/*	border: 1px solid black;*/
+/*	background-color: #242323;*/
+/*	top: -97px;*/
+/*	display: none;*/
+/*}*/
+
+/*input{*/
+/*	display:none\9!important;*/
+/*}*/
+
 input[type="range"] {
 	-webkit-appearance: none;
 	border: 1px solid black;
@@ -393,15 +377,19 @@ i {
 	width: 100%;
 	height: 90px;
 	text-align: center;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.address {
+.author {
 	color: #bdbdbd;
 	/*margin-bottom: 0;*/
 	margin-top: 30px;
 }
 
-.address a {
+.author a {
 	vertical-align: center;
 	/*text-decoration: none;*/
 	color: #ccffff;
@@ -409,7 +397,7 @@ i {
 	font-family: 'Titillium Web', sans-serif;
 }
 
-.address a:hover {
+.author a:hover {
 	text-decoration: none;
 	color: #ccffff;
 	/*color: #bdbdbd;*/
