@@ -20,7 +20,7 @@
 	}
 	
 	.container-fluid {
-	    /*padding-top: 10px;*/
+	    padding-top: 10px;
 	}
 	
 	.title-logo {
@@ -92,8 +92,12 @@
         margin-top: 5px;
 	}
 	
+	.containerLarge {
+	    height: 227px;
+	}
+	
 	.coverLarge {
-	    /*height: 190px;*/
-	    display: none;
+	    height: 190px;
+	    /*display: none;*/
 	}
 }
