@@ -93,7 +93,11 @@
 	}
 	
 	.containerLarge {
-	    height: 227px;
+	    height: 234px;
+	}
+	
+	.cover {
+	    border: 1px solid black;
 	}
 	
 	.coverLarge {
