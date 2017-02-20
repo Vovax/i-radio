@@ -9,15 +9,26 @@ html {
  /*   overflow-x: hidden;*/
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
-	background-image: url(../images/bg.jpg);
-	background-size:cover;
-    overflow: hidden;
+	background: url(../images/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*overflow: hidden;*/
+    max-width: 100%;
+    position: fixed;
 }
 
 .header {
 	position: relative;
 	left: 30px;
+	max-width: 100%;
 }
 
 .container-fluid {
@@ -116,7 +127,7 @@ h1 {
 	-o-transition: all .7s ease;
 	-ms-transition: all .7s ease;
 	transition: all .7s ease;
-	width: 427px;
+	width: auto;
 	height: 70px;
 	
 	-webkit-border-radius: 10px;
@@ -177,9 +188,11 @@ h1 {
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 	position: absolute;
-	width: 300px;
+	width: auto;
 	bottom: 10px;
-	width: 84%;
+	right: 27px;
+    left: 25px;
+	/*width: 84%;*/
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -194,10 +207,12 @@ h1 {
 	background-repeat: no-repeat;
 	float: left;
 	margin-right: 5px;
+	text-shadow: 1px 1px 3px #000;
 }
 
 .fa {
 	color: #ccffff;
+	-webkit-font-smoothing: antialiased;
 }
 
 .fa-play {
@@ -230,6 +245,14 @@ h1 {
     margin-left: -5px;
 }
 
+input[type='range'] { 
+	display: block;
+	margin-top: -76px;
+	height: 1px;
+	margin-top: -5px;
+	width: auto;
+}
+
 /*#play {*/
 /*	background-position: 6px 5px;*/
 /*	background: url(../images/vol-up.png);*/
@@ -247,11 +270,6 @@ h1 {
 /*#muted {*/
 /*	background-position: -106px 5px;*/
 /*}*/
-
-input[type="range"] {
-	width: 250px;
-	margin-top: -5px;
-}
 
 #close {
 	float: right;
@@ -370,10 +388,11 @@ i {
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	width: 100%;
+	height: 90px;
 	text-align: center;
-	height: 60px;
 }
 
 .address {

@@ -18,12 +18,14 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <!--<nav>-->
             <div class="links">
                 <a href="" class="link_button">Deep Fm</a>
                 <a href="#" class="link_button">Chill Fm</a>
                 <a href="#" class="link_button">Lounge Fm</a>
                 <a href="#" class="link_button">Country Fm</a>
             </div>
+            <!--</nav>-->
         </header>
         <main class="container-fluid">
             <div class="row">
@@ -39,11 +41,12 @@
                 <div class="col-md-4">
                     <div class="play-window">
                         <div class="player-content gradient">
-                            <img class="cover" src="images/cover1.jpg" alt="" style="width: 403px">
+                            <img class="cover" src="images/cover1.jpg" alt="" style="width: 100%">
                             <div class="player gradient">
                                 <a class="play-btn gradient" id="play" href="" title=""><i class="fa fa-play"></i></a>
                                 <a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></i></a>
                                     <!--<input type="range" id="seek" value="0" max=""/>-->
+                                <input id="volume" name="volume" min="0" max="1" step="0.1" type="range" onchange="setVolume()">
                                 <a class="play-btn gradient" id="close" href="" title=""><i class="fa fa-stop"></i></a>
                             </div>
                         </div>
@@ -56,21 +59,18 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <address class="address">
-                            &copy; <a href="https://www.facebook.com/vovaxx">Volodymyr Khvesyk</a>
-                            2017
-                        </address>
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <div class="socials">
-                            <a href="https://www.facebook.com/vovaxx"><i class="fa fa-soc fa-facebook-square"></i></a>
-                            <i class="fa fa-soc fa-twitter-square"></i>
-                            <i class="fa fa-soc fa-instagram"></i>
-                            <i class="fa fa-soc fa-snapchat-square"></i>
-                        </div>
+                <div class="col-md-8">
+                    <address class="address">
+                        &copy; <a href="https://www.facebook.com/vovaxx">Volodymyr Khvesyk</a>
+                        2017
+                    </address>
+                </div>
+                <div class="col-md-4">
+                    <div class="socials">
+                        <a href="https://www.facebook.com/vovaxx"><i class="fa fa-soc fa-facebook-square"></i></a>
+                        <i class="fa fa-soc fa-twitter-square"></i>
+                        <i class="fa fa-soc fa-instagram"></i>
+                        <i class="fa fa-soc fa-snapchat-square"></i>
                     </div>
                 </div>
             </div>
