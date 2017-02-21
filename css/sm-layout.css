@@ -3,8 +3,6 @@
 	    height: 60px;
 	}
 	.links {
-        padding-left: 15px;
-        padding-right: 15px;
         text-align: center;
 		
 	}
@@ -19,12 +17,20 @@
 	    padding: 3px 5px;
 	}
 	
-	.container-fluid {
-	    padding-top: 10px;
+	.title-logo {
+		text-align: center;
 	}
+	
+	/*.container-fluid {*/
+	/*    padding-top: 10px;*/
+	/*}*/
 	
 	.title-logo {
 	    padding-top: 0;
+	}
+	
+	.carousel-wrapper {
+		display: none;
 	}
 	
 	.play-window {
@@ -64,11 +70,12 @@
 	.fa-pause {
 	    font-size: 15px;
 	    margin-left: -5px;
+	    margin-top: 3px;
 	}
 	
 	.fa-volume-up {
 	    font-size: 18px;
-        margin-top: 3px;
+        margin-top: 2px;
 	}
 	
 	.fa-volume-off {

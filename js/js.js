@@ -7,7 +7,9 @@ $(document).ready(function() {
 	mute = $('#mute');
 	muted = $('#muted');
 	close = $('#close');
-	song = new Audio('http://185.33.22.15:11006');
+	song = new Audio('http://185.33.21.112:11017');
+	// vol = ('#volume');
+	vol = document.getElementById("volume");
 	duration = song.duration;
 
 	if (song.canPlayType('audio/mpeg;')) {
@@ -75,8 +77,15 @@ $(document).ready(function() {
 	});
 
 
+	$('#volume').on('change', function(e) {
+		e.preventDefault();
+		alert( this.value );
+    	curVolume = this.value;
+	});
 
-
+	$('.carousel').carousel({
+		interval: 4000
+	})
 
 
 
