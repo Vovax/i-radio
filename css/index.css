@@ -3,11 +3,6 @@
   src: url('fonts/ar-essence.ttf') format('ttf');
 }
 
-html {
-	/*background-image: url(../images/bg.jpg);*/
-	/*background-size:cover;*/
- /*   overflow-x: hidden;*/
-}
 
 html, body {
     width: 100%;
@@ -39,6 +34,10 @@ body {
 	padding-top: 15px;
 }
 
+.section {
+	padding: 0px;
+}
+
 .links {
 	/*padding-top: 15px;*/
     /*padding-left: 30px;*/
@@ -57,7 +56,6 @@ body {
 .links ul li a {
 	margin-right: 5px;
 	text-decoration: none;
-	/*color: #fff;*/
 	/*color: #ccffff;*/
 }
 
@@ -443,10 +441,11 @@ input::-webkit-slider-thumb {
 }
 
 .item {
+	opacity: 0.75;
 	width: 400px;
 	height: 400px;
-	/*text-align: center;*/
-	border-radius: 55px 55px 55px 55px;
+	border: 1px solid;
+    border-radius: 200px;
 }
 
 .item.active {
@@ -463,8 +462,11 @@ input::-webkit-slider-thumb {
 	display: none;
 }
 
-.carousel-inner.item {
-	/*display: block;*/
+.carousel-inner > .item > a > img, .carousel-inner > .item > img {
+	border: 5px solid;
+    border-radius: 200px;
+    width: 390px;
+    margin-top: 4px;
 }
 
 .carousel-indicators {

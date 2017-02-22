@@ -15,6 +15,7 @@ $(document).ready(function() {
 	if (song.canPlayType('audio/mpeg;')) {
     	song.type= 'audio/mpeg';
     	song.src= 'http://185.33.21.112:11017';
+    	// song.src= 'http://cast.loungefm.com.ua/terrace128';
 	} else {
     	song.type= 'audio/ogg';
     	song.src= 'http://185.33.22.15:11006';
@@ -84,7 +85,7 @@ $(document).ready(function() {
 	});
 
 	$('.carousel').carousel({
-		interval: 4000
+		interval: 7000
 	})
 
 
