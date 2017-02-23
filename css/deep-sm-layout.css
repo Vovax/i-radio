@@ -29,12 +29,6 @@
 	    padding-top: 0;
 	}
 	
-	.carousel-wrapper {
-		/*display: none;*/
-		padding-top: 0;
-		
-	}
-	
 	.play-window {
 	    padding-top: 0;
 	}
@@ -127,6 +121,12 @@
 	.coverLarge {
 	    height: 190px;
 	    /*display: none;*/
+	}
+	
+	.carousel-wrapper {
+		/*display: none;*/
+		padding-top: 10px;
+		
 	}
 	
 	.item {
