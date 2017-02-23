@@ -86,19 +86,6 @@ $(document).ready(function() {
 		interval: 7000,
 		pause: false
 	})
-	
-// 	function playPause() {
-//         var mediaPlayer = document.getElementById('player');
-//         if (mediaPlayer.paused) {
-//             mediaPlayer.play(); 
-//             $('#play').replaceWith('<a class="play-btn gradient" id="pause" href="" title=""><i class="fa fa-pause"></i></a>');
-//         } else {
-//             mediaPlayer.pause(); 
-//             $('#pause').replaceWith('<a class="play-btn gradient" id="play" href="" title=""><i class="fa fa-play"></i></a>');
-//         }
-//     }
-
-
 
 
 
