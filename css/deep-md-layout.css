@@ -1,0 +1,52 @@
+@media screen and (min-width:600px) and (max-width:799px) {
+    .header {
+	   	height: 95px;
+	}
+	
+	.logo {
+        position: absolute;
+        left: 120px;
+	}
+    
+    .title-logo {
+     text-align: center; 
+    }
+    
+    .play-window {
+        padding-top: 60px;
+    }
+    
+    .player {
+        left: 445px;
+        bottom: 65px;
+    }
+    
+    .carousel-wrapper {
+        padding-top: 0;
+        padding-left: 145px;
+    }
+    
+    .phone-tmp {
+        padding-top: 0;
+    }
+    
+    .phone-tmp img {
+        width: 100px;
+    }
+    
+    /*.footer {*/
+        
+    /*}*/
+    
+    .author {
+        position: absolute;
+        left: 17%;
+        /* padding-left: 100px; */
+    }
+    
+    .socials {
+        float: right;
+        padding-right: 100px;
+    }
+
+}
