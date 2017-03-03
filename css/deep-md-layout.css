@@ -4,8 +4,8 @@
 	}
 	
 	.logo {
-        position: absolute;
-        left: 120px;
+        /*position: absolute;*/
+        /*left: 120px;*/
 	}
     
     .title-logo {
@@ -13,12 +13,14 @@
     }
     
     .play-window {
-        padding-top: 60px;
+        padding-top: 50px;
+        height: 140px;
     }
     
     .player {
         left: 445px;
-        bottom: 65px;
+        left: 470px;
+        right: 70px;
     }
     
     .carousel-wrapper {
@@ -27,16 +29,19 @@
     }
     
     .phone-tmp {
-        padding-top: 0;
+        padding-top: 40px;
+        padding-bottom: 96px;
+        float: right;
     }
     
     .phone-tmp img {
         width: 100px;
     }
     
-    /*.footer {*/
-        
-    /*}*/
+    .footer {
+        position: fixed;
+        margin-top: 80px;
+    }
     
     .author {
         position: absolute;
