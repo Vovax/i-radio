@@ -16,11 +16,11 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
     /*overflow: hidden;*/
-    max-width: 100%;
-    position: fixed;
+    max-width: 1920px;
+    /*position: fixed;*/
     margin: 0 auto;
     /*margin-bottom: footer insert*/
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 .header {
