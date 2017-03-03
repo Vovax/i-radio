@@ -26,12 +26,12 @@
 	/*}*/
 	
 	.title-logo {
-	    padding-top: 0;
+	    padding-top: 15px;
 	}
 	
 	.play-window {
 	    padding-top: 0;
-	    height: 90px;
+	    height: 70px;
 	}
 	
 	.player-content {
