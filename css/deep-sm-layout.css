@@ -128,6 +128,15 @@
 		padding-top: 10px;
 		
 	}
+	.carousel-inner.carousel-fade {
+    	width: 100%;
+    	/*width: 153px;*/
+	}
+	
+	.carousel-inner > .item.active.left, .carousel-inner > .item.active.right {
+		/*opacity: 0;*/
+		display: none;
+	}
 	
 	.item {
     	opacity: 0.85;
@@ -141,4 +150,15 @@
         width: 145px;
         margin-top: 3px;
     }
+    
+    .carousel-fade .carousel-inner .item {
+	    /*transition-duration: 2s;*/
+	}
+    
+    .phone-tmp {
+    	/*padding-top: 10px;*/
+    	display: none;
+	}
+	
+	
 }
