@@ -1,21 +1,20 @@
 $(document).ready(function() {
 
-	container = $('.player-content');
+	container = $('.play-window');
 	cover = $('.cover');
 	play = $('#play');
 	pause = $('#pause');
 	mute = $('#mute');
 	muted = $('#muted');
 	close = $('#close');
-	song = new Audio('http://185.33.21.112:11017');
+	song = new Audio('http://cast.loungefm.com.ua/terrace128');
 	// vol = ('#volume');
 	vol = document.getElementById("volume");
 	duration = song.duration;
 
 	if (song.canPlayType('audio/mpeg;')) {
     	song.type= 'audio/mpeg';
-    	song.src= 'http://185.33.21.112:11017';
-    	// song.src= 'http://cast.loungefm.com.ua/terrace128';
+    	song.src= 'http://cast.loungefm.com.ua/terrace128';
 	} else {
     	song.type= 'audio/ogg';
     	song.src= 'http://185.33.22.15:11006';
@@ -23,42 +22,40 @@ $(document).ready(function() {
 
 
 
-	play.live('click', function(e) {
+	$('.player').on('click', '#play', function(e) {
 		e.preventDefault();
+// 		alert($(this));
+// 		alert(song.play());
 		song.play();
-
 		$(this).replaceWith('<a class="play-btn gradient" id="pause" href="" title=""><i class="fa fa-pause"></i></a>');
-		container.addClass('containerLarge');
-		cover.addClass('coverLarge');
-		$('#close').fadeIn(300);
+// 		$('#close').fadeIn(300);
 		$('#seek').attr('max',song.duration);
 	});
 
-	pause.live('click', function(e) {
+	$('.player').on('click', '#pause', function(e) {
 		e.preventDefault();
+// 		alert($(this));
 		song.pause();
 		$(this).replaceWith('<a class="play-btn gradient" id="play" href="" title=""><i class="fa fa-play"></i></a>');
 
 	});
-
-	mute.live('click', function(e) {
+    
+    $('.player').on('click', '#mute', function(e) {
 		e.preventDefault();
 		song.volume = 0;
 		$(this).replaceWith('<a class="play-btn gradient" id="muted" href="" title=""><i class="fa fa-volume-off"></i></a>');
 
 	});
-
-	muted.live('click', function(e) {
+    
+    $('.player').on('click', '#muted', function(e) {
 		e.preventDefault();
 		song.volume = 1;
 		$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></a>');
 
 	});
-
-	$('#close').click(function(e) {
+    
+    $('.player').on('click', '#close', function(e) {
 		e.preventDefault();
-		container.removeClass('containerLarge');
-		cover.removeClass('coverLarge');
 		song.pause();
 		song.currentTime = 0;
 		$('#pause').replaceWith('<a class="play-btn gradient" id="play" href="" title=""><i class="fa fa-player fa-play"></i></a>');
@@ -78,20 +75,21 @@ $(document).ready(function() {
 	});
 
 
-	$('#volume').on('change', function(e) {
+	$('.player').on('change', '#volume', function(e) {
 		e.preventDefault();
 		alert( this.value );
     	curVolume = this.value;
 	});
 
 	$('.carousel').carousel({
-		interval: 7000
+		interval: 7000,
+		pause: false
 	})
-
-
-
-
-
 	
+	
+
 	
 });
+
+
+    

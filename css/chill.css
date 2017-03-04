@@ -7,6 +7,8 @@
 html, body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 body {
@@ -27,7 +29,11 @@ body {
 	/*position: relative;*/
 	/*left: 30px;*/
 	/*max-width: 100%;*/
-	height: 60px;
+	height: 50px;
+}
+
+.page-wrapper {
+	padding-top: 15px;
 }
 
 .container {
@@ -81,13 +87,21 @@ a.link_button:active{
 }
 
 .logo {
-	/*position: relative;*/
- /*   left: 150px;*/
  	text-align: center;
+ 	padding-top: 11px;
+}
+
+.logo span {
+	/*color: #ccffff;*/
+	color: #bdbdbd;
+	font-size: 20px;
+    margin-left: -8px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .logo img{
 	width: 135px;
+	margin-top: -11px;
 }
 
 .title-logo {
@@ -102,7 +116,7 @@ a.link_button:active{
 }
 
 .carousel-wrapper {
-	padding-top: 60px;
+	padding-top: 70px;
 }
 
 /*h1 {*/
@@ -174,7 +188,7 @@ a.link_button:active{
 	width: auto;
 	/*bottom: 10px;*/
 	right: 26px;
-    left: 26px;
+    left: 70px;
 	/*width: 84%;*/
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -404,16 +418,11 @@ input::-webkit-slider-thumb {
 
 .footer {
 	width: 100%;
-	/*height: 90px;*/
+	height: 60px;
 	margin: 0 auto;
 	text-align: center;
-	position: absolute;
-    bottom: 15px;
- /*   left: 0;*/
- /*   right: 0;*/
-    padding-top: 25px;
-    /*margin-top: 110px;*/
-    /*display: block;*/
+	/*position: absolute;*/
+ /*   bottom: 0;*/
 }
 
 .author {
@@ -438,10 +447,10 @@ input::-webkit-slider-thumb {
 
 .item {
 	/*opacity: 0.75;*/
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 	border: 1px solid;
-    border-radius: 200px;
+    border-radius: 250px;
 }
 
 .item.active {
@@ -460,13 +469,13 @@ input::-webkit-slider-thumb {
 }
 
 .carousel-inner.carousel-fade {
-	width: 400px;
+	width: 500px;
 }
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img {
 	border: 5px solid;
-    border-radius: 200px;
-    width: 390px;
+    border-radius: 250px;
+    width: 490px;
     margin-top: 4px;
 }
 
@@ -482,6 +491,7 @@ input::-webkit-slider-thumb {
     transition-property: opacity;
     transition-duration: 1.5s;
 }
+
 .carousel-fade .carousel-inner .active {
     opacity: 0.75;
 }
@@ -500,5 +510,23 @@ input::-webkit-slider-thumb {
 }
 
 .phone-tmp img {
-	width: 200px;
+	width: 150px;
+}
+
+.app-store {
+	padding-top: 80px;
+	float: right;
+}
+
+.app-store img {
+    width: 150px;
+}
+
+.fb-like {
+	float: right;
+}
+
+.soundcloud-like {
+	float: right;
+	padding-bottom: 60px;
 }
