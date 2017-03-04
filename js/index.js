@@ -7,18 +7,19 @@ $(document).ready(function() {
 	mute = $('#mute');
 	muted = $('#muted');
 	close = $('#close');
-	song = new Audio('http://cast.loungefm.com.ua/terrace128');
+	audio = 'http://cast.loungefm.com.ua/terrace128';
+	song = new Audio(audio);
 	// vol = ('#volume');
 	vol = document.getElementById("volume");
 	duration = song.duration;
 
-	if (song.canPlayType('audio/mpeg;')) {
-    	song.type= 'audio/mpeg';
-    	song.src= 'http://cast.loungefm.com.ua/terrace128';
-	} else {
-    	song.type= 'audio/ogg';
-    	song.src= 'http://185.33.22.15:11006';
-	}
+	// if (song.canPlayType('audio/mpeg;')) {
+ //   	song.type= 'audio/mpeg';
+ //   	song.src= 'http://cast.loungefm.com.ua/terrace128';
+	// } else {
+ //   	song.type= 'audio/ogg';
+ //   	song.src= 'http://185.33.22.15:11006';
+	// }
 
 
 
