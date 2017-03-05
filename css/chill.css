@@ -83,6 +83,8 @@ a.link_button:hover{
 
 a.link_button:active{
 	color: #ccffff;
+	font-weight: 700;
+	letter-spacing: 1px;
 	text-decoration: none;
 }
 
