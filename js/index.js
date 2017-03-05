@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	
 	container = $('.play-window');
 	cover = $('.cover');
 	play = $('#play');
@@ -7,19 +7,20 @@ $(document).ready(function() {
 	mute = $('#mute');
 	muted = $('#muted');
 	close = $('#close');
-	audio = 'http://cast.loungefm.com.ua/terrace128';
+	audio = 'http://93.75.217.95:8000/';
 	song = new Audio(audio);
 	// vol = ('#volume');
 	vol = document.getElementById("volume");
 	duration = song.duration;
 
-	// if (song.canPlayType('audio/mpeg;')) {
- //   	song.type= 'audio/mpeg';
- //   	song.src= 'http://cast.loungefm.com.ua/terrace128';
-	// } else {
- //   	song.type= 'audio/ogg';
- //   	song.src= 'http://185.33.22.15:11006';
-	// }
+	if (song.canPlayType('audio/mpeg;')) {
+    	song.type= 'audio/mpeg';
+    	song.src= 'http://93.75.217.95:8000';
+    	// song.src= 'http://cast.loungefm.com.ua/terrace128';
+	} else {
+    	song.type= 'audio/ogg';
+    	song.src= 'http://185.33.22.15:11006';
+	}
 
 
 
@@ -92,5 +93,3 @@ $(document).ready(function() {
 	
 });
 
-
-    
