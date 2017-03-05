@@ -464,7 +464,7 @@ input::-webkit-slider-thumb {
 }
 
 .carousel-control {
-	display: none;
+	/*display: none;*/
 	
 }
 
