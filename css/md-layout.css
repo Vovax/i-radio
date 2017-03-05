@@ -28,7 +28,7 @@
     
     .phone-tmp {
         padding-top: 20px;
-        padding-bottom: 96px;
+        padding-bottom: 35px;
         float: right;
     }
     
@@ -54,8 +54,8 @@
     
     .app-store {
         float: left;
-        padding-top: 88px;
-        padding-bottom: 50px;
+        /*padding-top: 88px;*/
+        padding-top: 98px;
     }
     
     .app-store img {
@@ -63,7 +63,14 @@
     }
     
     .fb-like {
-        display: none;
+        /*display: none;*/
+        float: none;
+        text-align: center;
+        margin-top: -110px;
+    }
+    
+    .fb-like iframe{
+        height: 72px;
     }
     
     .soundcloud-like {
