@@ -470,6 +470,7 @@ input::-webkit-slider-thumb {
 
 .carousel-inner.carousel-fade {
 	width: 500px;
+	margin: auto;
 }
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img {

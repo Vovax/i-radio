@@ -18,18 +18,16 @@
     }
     
     .player {
-        left: 445px;
-        left: 470px;
-        /*right: 70px;*/
+        left: 27%;
+        right: 27%;
     }
     
     .carousel-wrapper {
         padding-top: 0;
-        padding-left: 145px;
     }
     
     .phone-tmp {
-        padding-top: 40px;
+        padding-top: 20px;
         padding-bottom: 96px;
         float: right;
     }
@@ -39,8 +37,8 @@
     }
     
     .footer {
-        position: fixed;
-        margin-top: 80px;
+        /*position: fixed;*/
+        /*margin-top: 80px;*/
     }
     
     .author {
@@ -52,6 +50,24 @@
     .socials {
         float: right;
         padding-right: 100px;
+    }
+    
+    .app-store {
+        float: left;
+        padding-top: 88px;
+        padding-bottom: 50px;
+    }
+    
+    .app-store img {
+        width: 120px;
+    }
+    
+    .fb-like {
+        display: none;
+    }
+    
+    .soundcloud-like {
+        display: none;
     }
 
 }
