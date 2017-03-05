@@ -1,7 +1,81 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 991px) {
     .header {
-	   	/*height: 95px;*/
+	   	height: 95px;
 	}
+	
+	.logo {
+        /*position: absolute;*/
+        /*left: 120px;*/
+	}
+    
+    .title-logo {
+     text-align: center; 
+    }
+    
+    .play-window {
+        padding-top: 50px;
+        height: 140px;
+    }
+    
+    .player {
+        left: 27%;
+        right: 27%;
+    }
+    
+    .carousel-wrapper {
+        padding-top: 0;
+    }
+    
+    .phone-tmp {
+        padding-top: 20px;
+        padding-bottom: 35px;
+        float: right;
+    }
+    
+    .phone-tmp img {
+        width: 100px;
+    }
+    
+    .footer {
+        /*position: fixed;*/
+        /*margin-top: 80px;*/
+    }
+    
+    .author {
+        position: absolute;
+        left: 17%;
+        /* padding-left: 100px; */
+    }
+    
+    .socials {
+        float: right;
+        padding-right: 100px;
+    }
+    
+    .app-store {
+        float: left;
+        /*padding-top: 88px;*/
+        padding-top: 98px;
+    }
+    
+    .app-store img {
+        width: 120px;
+    }
+    
+    .fb-like {
+        /*display: none;*/
+        float: none;
+        text-align: center;
+        margin-top: -110px;
+    }
+    
+    .fb-like iframe{
+        height: 72px;
+    }
+    
+    .soundcloud-like {
+        display: none;
+    }
 	
 
 }

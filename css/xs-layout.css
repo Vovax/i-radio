@@ -1,4 +1,4 @@
-@media screen and (min-width:480px) and (max-width:599px) {
+@media screen and (max-width:479px) {
 	.header {
 	   	height: 45px;
 	}
@@ -141,15 +141,15 @@
 	
 	.item {
     	opacity: 0.85;
-    	width: 253px;
-        height: 253px;
+    	width: 153px;
+        height: 153px;
     	border: 1px solid;
         border-radius: 200px;
     }
     
     .carousel-inner > .item > img {
-	    width: 245px;
-	    margin-top: 3px;
+        width: 145px;
+        margin-top: 3px;
     }
     
     .carousel-fade .carousel-inner .item {
