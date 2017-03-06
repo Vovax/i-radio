@@ -53,28 +53,42 @@
     }
     
     .app-store {
-        float: left;
-        /*padding-top: 88px;*/
-        padding-top: 98px;
+        float: none;
+        /*float: left;*/
+        /*padding-top: 98px;*/
+        padding-top: 51px;
     }
     
     .app-store img {
         width: 120px;
     }
     
+    .google-play {
+		float: left;
+	}
+	
+	.google-play img {
+	    width: 120px;
+	}
+    
     .fb-like {
         /*display: none;*/
-        float: none;
-        text-align: center;
-        margin-top: -110px;
+        float: left;
+        /*text-align: center;*/
+        /*margin-top: -110px;*/
     }
     
-    .fb-like iframe{
+    .fb-like iframe {
         height: 72px;
     }
     
     .soundcloud-like {
-        display: none;
+        /*display: none;*/
+        float: right;
+    }
+    
+    .soundcloud-like iframe {
+        height: 72px;
     }
 	
 

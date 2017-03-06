@@ -522,16 +522,31 @@ input::-webkit-slider-thumb {
 }
 
 .app-store {
-	padding-top: 80px;
+	padding-top: 100px;
 	float: right;
 }
 
 .app-store img {
     width: 150px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5)
+}
+
+.google-play {
+	padding-top: 10px;
+	float: right;
+}
+
+.google-play img {
+	width: 150px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5)
 }
 
 .fb-like {
 	float: right;
+}
+
+.fb-like iframe {
+	box-shadow: 0 0 50px rgba(0,0,0,0.5)
 }
 
 .soundcloud-like {
