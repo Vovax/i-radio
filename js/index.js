@@ -86,24 +86,6 @@ $(document).ready(function() {
 	$('.carousel').carousel({
 		interval: 7000,
 		pause: false
-	});
-	
-	$(".carousel").swiperight(function() {
-    	$(this).carousel('prev');
-	});
-		
-	$(".carousel").swipeleft(function() {
-		$(this).carousel('next');
-	});
-	
-	$(".carousel-inner").swipe( {
-		swipeLeft:function(event, direction, distance, duration, fingerCount) {
-			$(this).parent().carousel('prev'); 
-		},
-		swipeRight: function() {
-			$(this).parent().carousel('next'); 
-		},
-		threshold:0
 	})
 	
 	

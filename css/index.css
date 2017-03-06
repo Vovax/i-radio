@@ -74,14 +74,7 @@ a.link_button {
 	transition: all 0.3s ease 0s;
 }
 
-a.link_button:hover{
-	color: #ccffff;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-decoration: none;
-}
-
-a.link_button:active{
+a.link_button:hover, a.link_button:active {
 	color: #ccffff;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -463,6 +456,10 @@ input::-webkit-slider-thumb {
 .item img {
 	/*text-align: center;*/
 	margin: 0 auto;
+}
+
+.item img:-moz-loading {
+    visibility: hidden;
 }
 
 .carousel-control {
