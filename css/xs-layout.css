@@ -189,6 +189,9 @@
 		position: absolute;
     	bottom: 5px;
 	}
+	.back-top {
+		display: none;
+	}
 	
 	
 }

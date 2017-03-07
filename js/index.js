@@ -86,11 +86,28 @@ $(document).ready(function() {
 	$('.carousel').carousel({
 		interval: 7000,
 		pause: false
-	})
+	});
+	
+	$(window).on('scroll', function() {
+		if ($(document).scrollTop() > 200) {
+			$('.back-top').addClass('active');
+		} else {
+			$('.back-top').removeClass('active');
+		}
+	});
+
+	
+	$(".back-top").on('click', '#top', function(e){
+		e.preventDefault();
+    	$('html, body').animate({ scrollTop: 0 }, 'slow');
+    	// return false;
+    })
 	
 	
 
 	
 });
+
+
 
 

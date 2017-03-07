@@ -90,6 +90,10 @@
     .soundcloud-like iframe {
         height: 72px;
     }
+    
+    .back-top {
+		display: none;
+	}
 	
 
 }
