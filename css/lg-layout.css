@@ -79,6 +79,7 @@
 	}
 	
 	.contact-us {
+	    display: none;
 		padding: 0;
 		width: auto;
 		-webkit-transform-origin: top right;
