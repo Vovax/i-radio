@@ -39,8 +39,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="logo"><img src="images/iradio2.png" alt="iRadio Logo"/><span> deep </span></div>
-                    <!--<img class="disc-logo" src="images/disc.png" alt="">-->
-                    <div class="contacts">
+                    <div class="table">
+                        
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -145,10 +145,42 @@
                 <div class="col-md-6">
                     <div class="author">
                         Copyright 2017 &copy; <a href="https://fb.me/iRadioFMOnline">iRadio FM</a>
-                            
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <div class="contact-us">
+                        <a href="" class="contact link_button" data-toggle="modal" data-target="#contactModal">
+                            <i class="fa fa-envelope-o"></i>
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="contactLabel">Contact Us</h4>
+                                </div>
+                                <form action="https://formspree.io/volodymyr.khvesyk@gmail.com" method="POST">
+                                    <div class="modal-body">
+                                        <div class="group-left">
+                                            <input class="name" name="name" id="name" placeholder="Name" type="text" required>
+                                            <input class="email" name="email" id="email" placeholder="E-mail" type="email" required="">
+                                        </div>
+                                        <div class="group-right">
+                                            <textarea class="message" name="message" placeholder="Message" type="text" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-default">
+                                            <i class="fa fa-paper-plane-o"></i>
+                                            SEND
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     <nav class="socials">
                         <ul>
                             <li>

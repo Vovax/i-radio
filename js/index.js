@@ -9,8 +9,8 @@ $(document).ready(function() {
 	close = $('#close');
 	audio = 'http://93.75.217.95:8000/';
 	song = new Audio(audio);
-	// vol = ('#volume');
-	vol = document.getElementById("volume");
+	vol = $('#volume');
+	// vol = document.getElementById("volume");
 	duration = song.duration;
 
 	if (song.canPlayType('audio/mpeg;')) {
@@ -79,20 +79,33 @@ $(document).ready(function() {
 
 	$('.player').on('change', '#volume', function(e) {
 		e.preventDefault();
-		alert( this.value );
+		// alert( this.value );
     	curVolume = this.value;
+    	song.volume = 0.1;
+    	
+  //  	song.onvolumechange = function() {
+		// 	alert("The volume has been changed!");
+		// };
 	});
+	
+
+	// $('.player').addEventListener('change', '#volume', function() {
+
+	// }, false);
+	
+	
 
 	$('.carousel').carousel({
 		interval: 7000,
 		pause: false
 	});
+   
 	
 	$(window).on('scroll', function() {
 		if ($(document).scrollTop() > 200) {
-			$('.back-top').addClass('active');
+			$('.back-top').removeClass('inactive').addClass('active');
 		} else {
-			$('.back-top').removeClass('active');
+			$('.back-top').removeClass('active').addClass('inactive');
 		}
 	});
 

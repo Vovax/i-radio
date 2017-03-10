@@ -2,11 +2,6 @@
     .header {
 	   	height: 95px;
 	}
-	
-	.logo {
-        /*position: absolute;*/
-        /*left: 120px;*/
-	}
     
     .title-logo {
      text-align: center; 
@@ -36,15 +31,9 @@
         width: 100px;
     }
     
-    .footer {
-        /*position: fixed;*/
-        /*margin-top: 80px;*/
-    }
-    
     .author {
         position: absolute;
         left: 17%;
-        /* padding-left: 100px; */
     }
     
     .socials {
@@ -54,8 +43,6 @@
     
     .app-store {
         float: none;
-        /*float: left;*/
-        /*padding-top: 98px;*/
         padding-top: 51px;
     }
     
@@ -72,10 +59,7 @@
 	}
     
     .fb-like {
-        /*display: none;*/
         float: left;
-        /*text-align: center;*/
-        /*margin-top: -110px;*/
     }
     
     .fb-like iframe {
@@ -83,7 +67,6 @@
     }
     
     .soundcloud-like {
-        /*display: none;*/
         float: right;
     }
     
@@ -93,6 +76,42 @@
     
     .back-top {
 		display: none;
+	}
+	
+	.contact-us {
+		padding: 0;
+		width: auto;
+		-webkit-transform-origin: top right;
+		-moz-transform-origin: top right;
+		-ms-transform-origin: top right;
+		transform-origin: top right;
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+		position: fixed;
+    	right: 0px;
+    	bottom: 14px;
+	}
+	
+	.modal-body input {
+    	padding: 30px 0px 10px;
+	}
+	
+	.modal.fade .modal-dialog {
+		top: 255px;
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+	
+	.modal-dialog .modal-content {
+    	background-color: rgba(54, 54, 54, 0.75);
+	}
+	
+	.modal-content .modal-footer {
+	    width: 100%;
+	    text-align: center;
+	    padding-top: 40px;
 	}
 
 }
