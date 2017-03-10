@@ -237,6 +237,7 @@
 	.modal-content .modal-footer {
 		width: 92%;
 		font-size: 12px;
+		padding-right: 0;
 	}
 	
 	

@@ -581,7 +581,8 @@ a.contact:link, a.contact:visited {
 
 .modal-content .modal-footer {
 	border: none;
-	width: 94%;
+	/*width: 94%;*/
+	padding-right: 55px;
 }
 
 .modal-footer button {

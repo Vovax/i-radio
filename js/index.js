@@ -115,6 +115,36 @@ $(document).ready(function() {
     	$('html, body').animate({ scrollTop: 0 }, 'slow');
     	// return false;
     })
+    
+  //  $('.contact').click(function() {
+		// $('.modal-wrapper').toggleClass('open');
+		// $('.page-wrapper').toggleClass('blur');
+		// return false;
+	 // });
+    
+	// $.ajax({
+	//     type: "GET",
+	//     url: "http://93.75.217.95:8000/status.xsl",
+	//     dataType: "xsl",
+	//     success: function(data) {
+	//         /* handle data here */
+	//         $(".table").html(data);
+	//     },
+	//     error: function(xhr, status) {
+	//         /* handle error here */
+	//         $(".table").html(status);
+	//     }
+	// });
+	
+	
+	// $.ajax({
+	//     url: "http://93.75.217.95:8000",
+	//     type: 'GET',
+	//     success: function(res) {
+	//         var status = res.responseText;
+	//         $(".table").html(status);
+	//     }
+	// });
 	
 	
 
