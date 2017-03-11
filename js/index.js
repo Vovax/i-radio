@@ -15,8 +15,8 @@ $(document).ready(function() {
 
 	if (song.canPlayType('audio/mpeg;')) {
     	song.type= 'audio/mpeg';
-    	song.src= 'http://93.75.217.95:8000';
-    	// song.src= 'http://cast.loungefm.com.ua/terrace128';
+    	// song.src= 'http://93.75.217.95:8000';
+    	song.src= 'http://cast.loungefm.com.ua/terrace128';
 	} else {
     	song.type= 'audio/ogg';
     	song.src= 'http://185.33.22.15:11006';
@@ -114,7 +114,7 @@ $(document).ready(function() {
 		e.preventDefault();
     	$('html, body').animate({ scrollTop: 0 }, 'slow');
     	// return false;
-    })
+    });
     
     $("form").on( "submit", function(e) {
 		  e.preventDefault();
@@ -145,6 +145,7 @@ $(document).ready(function() {
 	        }
 	    });        
 	})
+
     
     
     
