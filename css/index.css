@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-	background: url(../images/bg.jpg) no-repeat center center fixed;
+	background: url(../images/bg-index.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -55,6 +55,7 @@ body {
 .links ul li a {
 	margin-right: 5px;
 	text-decoration: none;
+	/*text-shadow: 1px 1px 3px #000;*/
 }
 
 a.link_button {
@@ -100,6 +101,10 @@ a.link_button:visited {
 	margin-top: -11px;
 }
 
+.logo span {
+	text-shadow: 1px 1px 3px #000;
+}
+
 .title-logo {
 	padding-top: 20px;
 }
@@ -107,6 +112,7 @@ a.link_button:visited {
 .title-logo h5 {
 	color: #bdbdbd;
 	font-family: 'Titillium Web', sans-serif;
+	text-shadow: 1px 1px 3px #000;
 }
 
 .carousel-wrapper {
