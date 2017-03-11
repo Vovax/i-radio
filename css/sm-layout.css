@@ -240,6 +240,9 @@
 		font-size: 12px;
 		padding-right: 0;
 	}
+	.alert {
+		display: none;
+	}
 	
 	
 }

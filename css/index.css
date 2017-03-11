@@ -590,6 +590,10 @@ a.contact:link, a.contact:visited {
     background-color: #bdbdbd;
 }
 
+.alert {
+	display: none;
+}
+
 .fa-send-o:before, .fa-paper-plane-o:hover {
 	color: #ccffff;
 }

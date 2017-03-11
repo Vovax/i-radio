@@ -116,37 +116,52 @@ $(document).ready(function() {
     	// return false;
     })
     
-  //  $('.contact').click(function() {
-		// $('.modal-wrapper').toggleClass('open');
-		// $('.page-wrapper').toggleClass('blur');
-		// return false;
-	 // });
+    $("form").on( "submit", function(e) {
+		  e.preventDefault();
+		  console.log( $(this).serialize() );
+		});
+
+	
+	$(".modal").on("submit", "form", function(e) {
+	    e.preventDefault();        
+	    // var form = $(this);
+	    $.ajax({
+	        type: "POST",
+	    	url: 'https://formspree.io/volodymyr.khvesyk@gmail.com',
+	        dataType: "JSON",
+	        data: new FormData(this),
+	        processData: false,
+	        contentType: false,
+	        success: function (data, status) {
+				$('.alert').show();
+				// $('.modal').hide();
+				// $('body').removeClass('modal-open');
+				// $('.modal-backdrop').remove();
+				// window.location.reload();
+				
+	        },
+	        error: function (xhr, desc, err) {
+				alert(err);
+	        }
+	    });        
+	})
+    
+    
+    
     
 	// $.ajax({
 	//     type: "GET",
 	//     url: "http://93.75.217.95:8000/status.xsl",
 	//     dataType: "xsl",
 	//     success: function(data) {
-	//         /* handle data here */
 	//         $(".table").html(data);
 	//     },
 	//     error: function(xhr, status) {
-	//         /* handle error here */
 	//         $(".table").html(status);
 	//     }
 	// });
 	
-	
-	// $.ajax({
-	//     url: "http://93.75.217.95:8000",
-	//     type: 'GET',
-	//     success: function(res) {
-	//         var status = res.responseText;
-	//         $(".table").html(status);
-	//     }
-	// });
-	
-	
+
 
 	
 });

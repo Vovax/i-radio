@@ -109,6 +109,9 @@
 	    padding-top: 40px;
 	    padding-right: 0;
 	}
+	.alert {
+    	display: none;
+    }
 	
 
 }
