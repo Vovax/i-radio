@@ -17,9 +17,10 @@
         right: 140px;
     }
     
-    /*input[type="range"] {*/
-    /*    top: 6px;*/
-    /*}*/
+    input[type="range"] {
+        left: 125px;
+        width: 58%;
+    }
     
     .carousel-wrapper {
         padding-top: 0;
