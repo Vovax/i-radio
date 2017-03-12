@@ -283,7 +283,7 @@ input[type="range"] {
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 	background-color: #242323;
-	left: 118px;
+	left: 42%;
 	-webkit-box-shadow: inset 0px 4px 4px rgba(0,0,0,.6);
 	-moz-box-shadow: inset 0px 4px 4px rgba(0,0,0,.6);
 	box-shadow: inset 0px 4px 4px rgba(0,0,0,.6);
@@ -454,13 +454,23 @@ input::-webkit-slider-thumb {
 	font-family: 'Titillium Web', sans-serif;
 }
 
-.contact-us {
+.contact-us.active {
 	float: right;
     width: 125px;
    	padding-top: 5px;
+    position: fixed;
+    bottom: 93px;
+    right: -47px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    background-color: rgba(222, 222, 222, 0.25);
+    border-radius: 4px;
+    transition: background-color 900ms ease;
 }
 
-.contact-us .link_button {
+.contact-us .active .contact {
 	padding: 3px 12px;
 }
 

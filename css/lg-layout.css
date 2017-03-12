@@ -17,6 +17,11 @@
         right: 27%;
     }
     
+    input[type="range"] {
+        left: 38%;
+        width: 44%;
+    }
+    
     .carousel-wrapper {
         padding-top: 0;
     }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bs/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="css/xl-layout.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/xl-layout.css">
     <link rel="stylesheet" media="screen and (min-width: 800px) and (max-width: 991px)" href="css/lg-layout.css">
     <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 799px)" href="css/md-layout.css">
     <link rel="stylesheet" media="screen and (min-width:480px) and (max-width: 599px)" href="css/sm-layout.css">
@@ -55,7 +55,7 @@
                             <div class="player gradient">
                                 <a class="play-btn gradient" id="play" href="" title=""><i class="fa fa-play"></i></a>
                                 <a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></i></a>
-                                <input id="volume" name="volume" min="0" max="100" step="1" type="range" value="100">
+                                <input id="volume" name="volume" min="0" max="100" step="1" type="range" value="100" data-highlight="true">
                                 <a class="play-btn gradient" id="close" href="" title=""><i class="fa fa-stop"></i></a>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="contact-us">
-                        <a href="" class="contact link_button" data-toggle="modal" data-target="#contactModal">
+                        <a href="" class="contact" data-toggle="modal" data-target="#contactModal">
                             <i class="fa fa-envelope-o"></i>
                             Contact Us
                         </a>

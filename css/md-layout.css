@@ -13,13 +13,13 @@
     }
     
     .player {
-        left: 140px;
-        right: 140px;
+        left: 23%;
+        right: 23%;
     }
     
     input[type="range"] {
-        left: 125px;
-        width: 48%;
+        left: 38%;
+        width: 43%;
     }
     
     .carousel-wrapper {

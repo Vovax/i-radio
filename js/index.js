@@ -85,12 +85,6 @@ $(document).ready(function() {
 	});
 	
 
-	// $('.player').addEventListener('change', '#volume', function() {
-
-	// }, false);
-	
-	
-
 	$('.carousel').carousel({
 		interval: 7000,
 		pause: false
@@ -111,6 +105,14 @@ $(document).ready(function() {
     	$('html, body').animate({ scrollTop: 0 }, 'slow');
     	// return false;
     });
+    
+    $(window).on('scroll', function() {
+		if ($(document).scrollTop() > 200) {
+			$('.contact-us').removeClass('inactive').addClass('active');
+		} else {
+			$('.contact-us').removeClass('active').addClass('inactive');
+		}
+	});
 
 	
 	$(".modal").on("submit", "form", function(e) {

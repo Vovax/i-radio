@@ -41,16 +41,16 @@
 	.player {
 	    padding: 0px;
         height: 30px;
-        left: 120px;
-        right: 120px;
+        left: 26%;
+        right: 26%;
         bottom: 20px;
 	}
 	
 	input[type="range"] {
 		height: 10px;
         top: 8px;
-        left: 98px;
-        width: 40%;
+        left: 38%;
+        width: 44%;
     }
     
     input::-webkit-slider-thumb {
