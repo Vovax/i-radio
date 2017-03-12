@@ -42,13 +42,14 @@
 	.player {
 	    padding: 0px;
         height: 30px;
-        left: 60px;
-        right: 60px;
+        left: 75px;
+        right: 75px;
         bottom: 20px;
 	}
 	
 	
 	input[type="range"] {
+		display: none;
 		height: 10px;
         top: 8px;
         left: 77px;
