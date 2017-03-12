@@ -42,10 +42,25 @@
 	.player {
 	    padding: 0px;
         height: 30px;
-        left: 80px;
-        right: 80px;
+        left: 60px;
+        right: 60px;
         bottom: 20px;
 	}
+	
+	
+	input[type="range"] {
+		height: 10px;
+        top: 8px;
+        left: 77px;
+        width: 35%;
+    }
+    
+    input::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		width: 15px;
+		height: 15px;
+	}
+	
 	
 	.play-btn {
 	    width: 24px;

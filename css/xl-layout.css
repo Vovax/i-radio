@@ -1,0 +1,14 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .play-window {
+        width: 100%;
+        
+    }
+    
+    .player {
+        left: 20px;
+        right: 16px;
+    }
+    
+
+}

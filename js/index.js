@@ -81,11 +81,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		// alert( this.value );
     	curVolume = this.value;
-    	song.volume = 0.1;
-    	
-  //  	song.onvolumechange = function() {
-		// 	alert("The volume has been changed!");
-		// };
+    	song.volume = curVolume / 100;
 	});
 	
 
@@ -115,11 +111,6 @@ $(document).ready(function() {
     	$('html, body').animate({ scrollTop: 0 }, 'slow');
     	// return false;
     });
-    
-    $("form").on( "submit", function(e) {
-		  e.preventDefault();
-		  console.log( $(this).serialize() );
-		});
 
 	
 	$(".modal").on("submit", "form", function(e) {
@@ -136,7 +127,7 @@ $(document).ready(function() {
 				$('.alert').show();
 				$('.modal').hide();
 				$('body').removeClass('modal-open');
-				// $('.modal-backdrop').remove();
+				$('.modal-backdrop').remove();
 				// window.location.reload();
 				
 	        },
@@ -149,6 +140,13 @@ $(document).ready(function() {
     
     
     
+    
+    
+    
+  //  $("form").on( "submit", function(e) {
+		//   e.preventDefault();
+		//   console.log($(this).serialize());
+		// });
     
 	// $.ajax({
 	//     type: "GET",

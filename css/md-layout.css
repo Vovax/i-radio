@@ -13,9 +13,13 @@
     }
     
     .player {
-        left: 27%;
-        right: 27%;
+        left: 140px;
+        right: 140px;
     }
+    
+    /*input[type="range"] {*/
+    /*    top: 6px;*/
+    /*}*/
     
     .carousel-wrapper {
         padding-top: 0;

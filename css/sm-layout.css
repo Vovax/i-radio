@@ -41,9 +41,22 @@
 	.player {
 	    padding: 0px;
         height: 30px;
-        left: 80px;
-        right: 80px;
+        left: 120px;
+        right: 120px;
         bottom: 20px;
+	}
+	
+	input[type="range"] {
+		height: 10px;
+        top: 8px;
+        left: 98px;
+        width: 40%;
+    }
+    
+    input::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		width: 15px;
+		height: 15px;
 	}
 	
 	.play-btn {
