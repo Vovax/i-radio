@@ -430,19 +430,16 @@ input[type=range]::-moz-focus-outer {
 .back-top {
 	width: 45px;
     height: 30px;
-    /*height: 26px;*/
-    background-color: rgba(222, 222, 222, 0.25);
-    border-radius: 4px;
-    transition: background-color 900ms ease;
+    /*display: none;*/
 }
 
 
 .back-top.active {
+	/*display: block;*/
 	position: fixed;
 	bottom: 50px;
 	width: 45px;
     height: 30px;
-    /*height: 26px;*/
     background-color: rgba(222, 222, 222, 0.25);
     border-radius: 4px;
     transition: background-color 900ms ease;
@@ -484,11 +481,7 @@ input[type=range]::-moz-focus-outer {
 	font-family: 'Titillium Web', sans-serif;
 }
 
-/*.contact-us {}*/
-
 .contact-us.active {
-	float: right;
-    width: 125px;
    	padding-top: 5px;
     position: fixed;
     bottom: 93px;
@@ -502,12 +495,21 @@ input[type=range]::-moz-focus-outer {
     transition: background-color 900ms ease;
 }
 
-.contact-us .active .contact {
-	padding: 3px 12px;
+.contact-us .contact {
+	padding: 5px 12px;
+	font-family: 'Titillium Web', sans-serif;
+	color: #ccffff;
+	transition: all 0.3s ease 0s;
 }
 
 .contact-us i {
 	margin-right: 5px;
+}
+
+a.contact:hover, a.contact:active {
+	color: #ccffff;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 a.contact:link, a.contact:visited {
