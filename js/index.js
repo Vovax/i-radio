@@ -1,7 +1,5 @@
 $(document).ready(function() {
 	
-	container = $('.play-window');
-	cover = $('.cover');
 	play = $('#play');
 	pause = $('#pause');
 	mute = $('#mute');
@@ -10,7 +8,6 @@ $(document).ready(function() {
 	audio = 'http://93.75.217.95:8000/';
 	song = new Audio(audio);
 	vol = $('#volume');
-	// vol = document.getElementById("volume");
 	duration = song.duration;
 
 	if (song.canPlayType('audio/mpeg;')) {
@@ -27,7 +24,6 @@ $(document).ready(function() {
 	$('.player').on('click', '#play', function(e) {
 		e.preventDefault();
 // 		alert($(this));
-// 		alert(song.play());
 		song.play();
 		$(this).replaceWith('<a class="play-btn gradient" id="pause" href="" title=""><i class="fa fa-pause"></i></a>');
 // 		$('#close').fadeIn(300);
@@ -116,7 +112,8 @@ $(document).ready(function() {
 
 	
 	$(".modal").on("submit", "form", function(e) {
-	    e.preventDefault();        
+	    e.preventDefault();  
+		contactFormValid();
 	    // var form = $(this);
 	    $.ajax({
 	        type: "POST",
@@ -126,23 +123,70 @@ $(document).ready(function() {
 	        processData: false,
 	        contentType: false,
 	        success: function (data, status) {
-				$('.alert').show();
-				$('.modal').hide();
+				showAlert(status);
+				$('.form').find("input,textarea").val('').end();
 				$('body').removeClass('modal-open');
 				$('.modal-backdrop').remove();
-				// window.location.reload();
-				
+				setTimeout(function(){
+			    	$(".modal").hide();
+			    }, 5000);
 	        },
 	        error: function (xhr, desc, err) {
-				alert(err);
+				showAlert("error"+ err.status + " " + err.statusText);
 	        }
 	    });        
-	})
-
-    
-    
-    
-    
+	});
+	
+	function contactFormValid() {
+	    var name = $("#name").val();
+	    var email = $("#email").val();
+	    var message = $("#message").val();
+	    var emailValid = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	    if (name == "") {
+	        showAlert("Please enter your name.");
+	        name.focus();
+	        return false;
+    	}
+    	if (email == "") {
+	        showAlert("Please enter a valid e-mail address.");
+	        email.focus();
+	        return false;
+	    }
+	    if (!emailValid.test(email)) {
+	        showAlert("Please enter a valid e-mail address.");
+	        email.focus();
+	        return false;
+	    }
+	    if (message == "") {
+	    	showAlert("Please type your message.");
+	        message.focus();
+	        return false;
+	    }
+	    return true;
+	};
+	
+	function showAlert(message) {
+		if (message == "success") {
+			var message = "Your message send.";
+	    	$('.alert').html("<div class='alert alert-success'>"+message+"</div>");
+			$('.alert').show();
+			$(".alert").fadeTo(10000, 500).slideUp(500, function() {
+			    $(".alert").alert('hide');
+			});
+		} else {
+			$('.alert').html("<div class='alert alert-danger'>"+message+"</div>");
+			$('.alert').show();
+			$(".alert").fadeTo(10000, 500).slideUp(500, function() {
+			    $(".alert").alert('hide');
+			});
+		}
+	}
+	
+	
+	
+	
+	
+	
     
     
   //  $("form").on( "submit", function(e) {

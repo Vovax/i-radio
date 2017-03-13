@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bs/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/xl-layout.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="css/xl-layout.css">
     <link rel="stylesheet" media="screen and (min-width: 800px) and (max-width: 991px)" href="css/lg-layout.css">
     <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 799px)" href="css/md-layout.css">
     <link rel="stylesheet" media="screen and (min-width:480px) and (max-width: 599px)" href="css/sm-layout.css">
@@ -167,21 +167,21 @@
                                 <form action="#" class="form">
                                     <div class="modal-body">
                                         <div class="group-left">
-                                            <input class="name" name="name" id="name" placeholder="Name" type="text" required>
-                                            <input class="email" name="email" id="email" placeholder="E-mail" type="email" required="">
+                                            <input class="name" name="name" id="name" placeholder="Name" type="text" >
+                                            <input class="email" name="email" id="email" placeholder="E-mail" type="email" >
                                         </div>
                                         <div class="group-right">
-                                            <textarea class="message" name="message" placeholder="Message" type="text" required></textarea>
+                                            <textarea class="message" name="message" id="message" placeholder="Message" ></textarea>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
+                                        <div class="alert">
+                                            <button type="button" class="hide" data-dismiss="alert">x</button>
+                                        </div>
                                         <button type="submit" class="btn btn-default" id="submit">
                                             <i class="fa fa-paper-plane-o"></i>
                                             SEND
                                         </button>
-                                    </div>
-                                    <div class="alert alert-success">
-                                        <strong>Success!</strong> Message send.
                                     </div>
                                 </form>
                             </div>
