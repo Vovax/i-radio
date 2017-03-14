@@ -342,6 +342,7 @@ input[type=range]::-moz-focus-outer {
  }
 .carousel .carousel-control {
 	visibility: hidden;
+	width: 20%;
 }
 .carousel:hover .carousel-control {
 	visibility: visible;
