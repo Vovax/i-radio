@@ -1,3 +1,264 @@
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) { 
+	.header {
+	   	height: 45px;
+	}
+	.links {
+        text-align: center;
+		
+	}
+	.links ul li {
+	    margin-bottom: 15px;
+	}
+	
+	.links ul li a {
+	    margin-right: 0;
+	}
+	a.link_button {
+	    padding: 3px 5px;
+	}
+	
+	.title-logo {
+		text-align: center;
+	}
+	
+	.title-logo {
+	    padding-top: 10px;
+	}
+	
+	.play-window {
+	    padding-top: 0;
+	    height: 70px;
+	}
+	
+	.player-content {
+	    height: 50px;
+        width: auto;
+        position: absolute;
+        left: 60px;
+        right: 60px;
+	}
+	
+	.player {
+	    padding: 0px;
+        height: 30px;
+        left: 26%;
+        right: 26%;
+        bottom: 20px;
+	}
+	
+	input[type="range"] {
+		height: 10px;
+        top: 8px;
+        left: 38%;
+        width: 44%;
+    }
+    
+    input::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		width: 15px;
+		height: 15px;
+	}
+	
+	.play-btn {
+	    width: 24px;
+        height: 23px;
+	    margin-left: 3px;
+        margin-top: 3px;
+        margin-right: 3px;
+	}
+	
+	#play {
+    	width: 60px;
+        height: 60px;
+        bottom: -15px;
+        left: 6px;
+	}
+	
+	#pause {
+	    width: 60px;
+        height: 60px;
+        bottom: -15px;
+        left: 6px;
+	}
+	
+	.fa-play {
+	    font-size: 20px;
+        margin-left: -2px;
+        margin-top: -6px;
+	}
+	
+	.fa-pause {
+    	font-size: 20px;
+        margin-left: -4px;
+        margin-top: -6px;
+	}
+	
+	.fa-volume-up {
+	    font-size: 18px;
+        margin-top: 2px;
+	}
+	
+	.fa-volume-off {
+	     font-size: 20px;
+        margin-left: -4px;
+        margin-top: 1px;
+	}
+	
+	.fa-stop {
+	    font-size: 15px;
+	    margin-top: 3px;
+	}
+	
+	.author {
+	    font-size: 10px;
+	}
+	
+	.fa-soc {
+	    font-size: 10px;
+	    font-size: 20px;
+        margin-top: 5px;
+	}
+	
+	.containerLarge {
+	    height: 234px;
+	}
+	
+	.cover {
+	    border: 1px solid black;
+	}
+	
+	.coverLarge {
+	    height: 190px;
+	}
+	
+	.carousel-wrapper {
+		padding-top: 30px;
+		
+	}
+	.carousel-inner.carousel-fade {
+    	width: 100%;
+	}
+	
+	.carousel-inner > .item.active.left, .carousel-inner > .item.active.right {
+		display: none;
+	}
+	
+	.item {
+    	opacity: 0.85;
+    	width: 253px;
+        height: 253px;
+    	border: 1px solid;
+        border-radius: 200px;
+    }
+    
+    .carousel-inner > .item > img {
+	    width: 245px;
+	    margin-top: 3px;
+    }
+    
+    .phone-tmp {
+    	display: none;
+	}
+	
+	.address {
+     margin-bottom: 0; 
+	}
+	
+	.app-store {
+		display: none;
+	}
+	
+	.google-play {
+		display: none;
+	}
+	
+	.fb-like {
+		display: none;
+	}
+	
+	.soundcloud-like {
+		display: none;
+	}
+	
+	.footer {
+		position: absolute;
+    	bottom: 5px;
+	}
+	
+	.back-top {
+		display: none;
+	}
+	
+	.contact-us {
+		display: none;
+		padding: 0;
+		width: auto;
+		-webkit-transform-origin: top right;
+		-moz-transform-origin: top right;
+		-ms-transform-origin: top right;
+		transform-origin: top right;
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+		position: fixed;
+    	right: 0px;
+    	bottom: 14px;
+	}
+	
+	.contact-us .link_button {
+	    font-size: 10px;
+	}
+	
+	.modal-body {
+		padding-top: 0px;
+		font-size: 11px;
+	}
+	
+	.modal-body .group-left {
+		width: auto;
+	}
+	
+	.modal-body .group-right {
+		display: inline;
+		width: auto;
+	}
+	
+	.modal-body input {
+    	padding: 30px 0px 10px;
+	}
+	
+	.modal-body .group-right textarea {
+		height: 85px;
+		padding: 33px 0px;
+		margin-top: 10px;
+	}
+	
+	.modal.fade .modal-dialog {
+		top: 255px;
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+	
+	.modal-dialog .modal-content {
+    	background-color: rgba(54, 54, 54, 0.75);
+	}
+	
+	.modal-header h4 {
+		font-size: 15px;
+	}
+	
+	.modal-content .modal-footer {
+		width: 92%;
+		font-size: 12px;
+		padding-right: 0;
+	}
+	.alert {
+		display: none;
+	} 
+}
+
+
 @media screen and (min-width:480px) and (max-width:599px) {
 	.header {
 	   	height: 45px;

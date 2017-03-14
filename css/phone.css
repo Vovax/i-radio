@@ -1,0 +1,41 @@
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { 
+
+    .carousel-wrapper {
+        padding-top: 5px;
+    }
+
+    a.link_button {
+        padding: 4px 8px;
+    }
+
+	.item {
+    	opacity: 0.85;
+    	width: 238px;
+        height: 238px;
+    	border: 1px solid;
+        border-radius: 200px;
+    }
+    
+    .carousel-inner > .item > img {
+        width: 230px;
+        margin-top: 3px;
+    }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) { 
+    
+    .item {
+    	opacity: 0.85;
+    	width: 238px;
+        height: 238px;
+    	border: 1px solid;
+        border-radius: 200px;
+    }
+    
+    .carousel-inner > .item > img {
+        width: 230px;
+        margin-top: 3px;
+    }
+    
+}

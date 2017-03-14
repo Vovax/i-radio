@@ -33,7 +33,7 @@
 	.player-content {
 	    height: 50px;
         width: auto;
-        /* padding: 0px; */
+         padding: 0px; 
         position: absolute;
         left: 60px;
         right: 60px;
@@ -42,8 +42,8 @@
 	.player {
 	    padding: 0px;
         height: 30px;
-        left: 75px;
-        right: 75px;
+        left: 26%;
+    	right: 26%;
         bottom: 20px;
 	}
 	
