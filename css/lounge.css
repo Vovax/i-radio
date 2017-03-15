@@ -63,19 +63,19 @@ a.link_button {
 	border-radius: 4px;
 	padding: 5px 12px;
 	font-family: 'Titillium Web', sans-serif;
-	color: #fff;
+	color: #ffffff;
 	transition: all 0.3s ease 0s;
 }
 
 a.link_button:hover, a.link_button:active {
-	color: #fff;
+	color: #ffffff;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
 
 a.link_button:visited {
 	outline: none; 
-	color: #fff; 
+	color: #ffffff; 
 	text-decoration: none; 
 }
 
@@ -127,7 +127,7 @@ a.link_button:visited {
 }
 
 .gradient {
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
 	-webkit-box-shadow: inset 0 1px 0px rgba(255,255,255,.2);
 	-moz-box-shadow: inset 0 1px 0px rgba(255,255,255,.2);
 	box-shadow: inset 0 1px 0px rgba(255,255,255,.2);
@@ -293,6 +293,7 @@ input::-webkit-slider-thumb {
 	width: 20px;
 	height: 20px;
 	border:1px solid black;
+	box-shadow: 0px 1px 1px rgba(0,0,0,.6);
 
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
