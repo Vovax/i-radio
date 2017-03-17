@@ -2,10 +2,14 @@
 	.header {
 	   	height: 45px;
 	}
+	.container {
+	    padding-right: 10px;
+	    padding-left: 10px;
+	}
 	.links {
         text-align: center;
-		
 	}
+
 	.links ul li {
 	    margin-bottom: 15px;
 	}
