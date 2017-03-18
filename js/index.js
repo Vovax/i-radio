@@ -10,13 +10,17 @@ $(document).ready(function() {
 	vol = $('#volume');
 	duration = song.duration;
 
-	if (song.canPlayType('audio/mpeg;')) {
-    	song.type= 'audio/mpeg';
+	if ($("body").data("title") === "deep-page") {
     	song.src= 'http://93.75.217.95:8000';
     	// song.src= 'http://cast.loungefm.com.ua/terrace128';
-	} else {
-    	song.type= 'audio/ogg';
-    	song.src= 'http://185.33.22.15:11006';
+	} else if ($("body").data("title") === "chill-page") {
+    	song.src= 'http://185.33.21.112:11085';
+	} else if ($("body").data("title") === "lounge-page") {
+    	song.src= 'http://icepe9.infomaniak.ch:80/energylounge-high.mp3';
+	}else {
+    	song.src= 'http://205.164.62.15:7016';
+    	// http://192.240.97.67:8059;
+    	// http://lush.wavestreamer.com:6970;
 	}
 
 

@@ -96,6 +96,10 @@ a.link_button:visited {
     font-family: 'Titillium Web', sans-serif;
 }
 
+.logo span i {
+	font-size: 10px;
+}
+
 .logo img{
 	width: 135px;
 	margin-top: -11px;
