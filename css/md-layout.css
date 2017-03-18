@@ -2,6 +2,14 @@
     .header {
 	   	height: 95px;
 	}
+	
+	.logo {
+	    padding-top: 0;
+	}
+	
+	.logo img {
+	    width: 135px;
+	}
     
     .title-logo {
      text-align: center; 
