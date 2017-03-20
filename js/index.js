@@ -11,8 +11,8 @@ $(document).ready(function() {
 	duration = song.duration;
 
 	if ($("body").data("title") === "deep-page") {
-    	song.src= 'http://93.75.217.95:8000';
-    	// song.src= 'http://cast.loungefm.com.ua/terrace128';
+    	// song.src= 'http://93.75.217.95:8000';
+    	song.src= 'http://cast.loungefm.com.ua/terrace128';
 	} else if ($("body").data("title") === "chill-page") {
     	song.src= 'http://185.33.21.112:11085';
 	} else if ($("body").data("title") === "lounge-page") {
@@ -48,13 +48,14 @@ $(document).ready(function() {
 		$(this).replaceWith('<a class="play-btn gradient" id="muted" href="" title=""><i class="fa fa-volume-off"></i></a>');
 
 	});
-    
-    $('.player').on('click', '#muted', function(e) {
-		e.preventDefault();
-		song.volume = 1;
-		$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></a>');
-
-	});
+  //  function getMuted(color, qty) {
+	 //   $('.player').on('click', '#muted', function(e) {
+		// 	e.preventDefault();
+		// 	song.volume = curVolume / 100;;
+		// 	$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></a>');
+	
+		// });
+    // };
     
     $('.player').on('click', '#close', function(e) {
 		e.preventDefault();
@@ -71,11 +72,16 @@ $(document).ready(function() {
 		$("#seek").attr("max", song.duration);
 	});
 
-	song.addEventListener('timeupdate',function (){
+	song.addEventListener('timeupdate',function () {
 		curtime = parseInt(song.currentTime, 10);
 	$("#seek").attr("value", curtime);
 	});
-
+	
+	$('.player').on('click', '#volume', function(e) {
+		e.preventDefault();
+		
+		
+	});
 
 	$('.player').on('change', '#volume', function(e) {
 		e.preventDefault();
@@ -100,7 +106,7 @@ $(document).ready(function() {
 	});
 
 	
-	$(".back-top").on('click', '#top', function(e){
+	$(".back-top").on('click', '#top', function(e) {
 		e.preventDefault();
     	$('html, body').animate({ scrollTop: 0 }, 'slow');
     	// return false;
