@@ -11,8 +11,8 @@ $(document).ready(function() {
 	duration = song.duration;
 
 	if ($("body").data("title") === "deep-page") {
-    	// song.src= 'http://93.75.217.95:8000';
-    	song.src= 'http://cast.loungefm.com.ua/terrace128';
+    	song.src= 'http://93.75.217.95:8000';
+    	// song.src= 'http://cast.loungefm.com.ua/terrace128';
 	} else if ($("body").data("title") === "chill-page") {
     	song.src= 'http://185.33.21.112:11085';
 	} else if ($("body").data("title") === "lounge-page") {
