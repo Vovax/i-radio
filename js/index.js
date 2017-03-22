@@ -48,14 +48,13 @@ $(document).ready(function() {
 		$(this).replaceWith('<a class="play-btn gradient" id="muted" href="" title=""><i class="fa fa-volume-off"></i></a>');
 
 	});
-  //  function getMuted(color, qty) {
-	 //   $('.player').on('click', '#muted', function(e) {
-		// 	e.preventDefault();
-		// 	song.volume = curVolume / 100;;
-		// 	$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></a>');
-	
-		// });
-    // };
+    
+    $('.player').on('click', '#muted', function(e) {
+		e.preventDefault();
+		song.volume = curVolume / 100;;
+		$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></a>');
+
+	});
     
     $('.player').on('click', '#close', function(e) {
 		e.preventDefault();
@@ -77,11 +76,14 @@ $(document).ready(function() {
 	$("#seek").attr("value", curtime);
 	});
 	
-	$('.player').on('click', '#volume', function(e) {
-		e.preventDefault();
-		
-		
-	});
+	// function getMuted(color, qty) {
+	//     $('.player').on('click', '#muted', function(e) {
+	// 		e.preventDefault();
+	// 		song.volume = curVolume / 100;;
+	// 		$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></a>');
+	
+	// 	});
+ //   };
 
 	$('.player').on('change', '#volume', function(e) {
 		e.preventDefault();
