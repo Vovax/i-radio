@@ -734,7 +734,7 @@ a.contact:link, a.contact:visited {
 }
 
 .socials i:nth-child(1) {
-	color: #ccffff;
+	color: #fff;
 	cursor: pointer;
 	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
 	transition: all ease-in-out 150ms;
@@ -747,7 +747,7 @@ a.contact:link, a.contact:visited {
 }
 
 .socials a i:nth-child(2) {
-	color: #ccffff;
+	color: #fff;
 	cursor: pointer;
 	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
 	transition: all ease-in-out 150ms;
@@ -760,7 +760,7 @@ a.contact:link, a.contact:visited {
 }
 
 .socials a i:nth-child(3) {
-	color: #ccffff;
+	color: #fff;
 	cursor: pointer;
 	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 	transition: all ease-in-out 150ms;
@@ -771,16 +771,3 @@ a.contact:link, a.contact:visited {
 	text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
 	transform: translate(0, -5);
 }
-.socials a i:nth-child(4) {
-	color: #ccffff;
-	cursor: pointer;
-	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
-	transition: all ease-in-out 150ms;
-}
-.socials a i:nth-child(4):hover {
-	margin-top: -10px;
-	text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
-	transform: translate(0, -8);
-}
-
-

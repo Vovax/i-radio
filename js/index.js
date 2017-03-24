@@ -11,8 +11,8 @@ $(document).ready(function() {
 	duration = song.duration;
 
 	if ($("body").data("title") === "deep-page") {
-    	song.src= 'http://93.75.217.95:8000';
-    	// song.src= 'http://cast.loungefm.com.ua/terrace128';
+    	// song.src= 'http://93.75.217.95:8000';
+    	song.src= 'http://cast.loungefm.com.ua/terrace128';
 	} else if ($("body").data("title") === "chill-page") {
     	song.src= 'http://185.33.21.112:11085';
 	} else if ($("body").data("title") === "lounge-page") {
@@ -49,12 +49,12 @@ $(document).ready(function() {
 
 	});
     
-    $('.player').on('click', '#muted', function(e) {
-		e.preventDefault();
-		song.volume = curVolume / 100;;
-		$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></a>');
+ //   $('.player').on('click', '#muted', function(e) {
+	// 	e.preventDefault();
+	// 	song.volume = curVolume / 100;;
+	// 	$(this).replaceWith('<a class="play-btn gradient" id="mute" href="" title=""><i class="fa fa-volume-up"></a>');
 
-	});
+	// });
     
     $('.player').on('click', '#close', function(e) {
 		e.preventDefault();
