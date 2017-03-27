@@ -1,4 +1,8 @@
 @media screen and (max-width:479px) {
+	#canvas {
+		display: none;
+	}
+	
 	.header {
 	   	height: 45px;
 	}

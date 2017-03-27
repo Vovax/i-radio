@@ -3,6 +3,10 @@
 	   	height: 95px;
 	}
 	
+	#canvas {
+		display: none;
+	}
+	
 	.logo {
 	    padding-top: 0;
 	}

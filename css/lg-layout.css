@@ -2,9 +2,13 @@
     .header {
 	   	height: 95px;
 	}
+	
+	#canvas {
+		display: none;
+	}
     
     .title-logo {
-     text-align: center; 
+        text-align: center; 
     }
     
     .play-window {

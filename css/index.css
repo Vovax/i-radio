@@ -21,6 +21,16 @@ body {
     margin: 0 auto;
 }
 
+canvas {
+	position: absolute;
+	width: 100%; 
+	height: 100%;
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+}
+
 
 /*---------------------------------------------*/
 /*------------------ HEADER -------------------*/
@@ -53,6 +63,7 @@ body {
 }
 
 .links ul li a {
+	position: relative;
 	margin-right: 5px;
 	text-decoration: none;
 	/*text-shadow: 1px 1px 3px #000;*/
@@ -442,7 +453,7 @@ input[type=range]::-moz-focus-outer {
 	opacity: 1;
 	position: fixed;
 	bottom: 50px;
-	width: 45px;
+	width: 46px;
     height: 30px;
     background-color: rgba(222, 222, 222, 0.25);
     border-radius: 4px;
@@ -453,7 +464,7 @@ input[type=range]::-moz-focus-outer {
 	margin-top: 7px;
 	width: 70%;
     height: 75%;
-    margin-left: 15px;
+    margin-left: 16px;
 }
 
 
@@ -734,7 +745,7 @@ a.contact:link, a.contact:visited {
 }
 
 .socials i:nth-child(1) {
-	color: #fff;
+	color: #ccffff;
 	cursor: pointer;
 	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
 	transition: all ease-in-out 150ms;
@@ -747,7 +758,7 @@ a.contact:link, a.contact:visited {
 }
 
 .socials a i:nth-child(2) {
-	color: #fff;
+	color: #ccffff;
 	cursor: pointer;
 	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
 	transition: all ease-in-out 150ms;
@@ -760,7 +771,7 @@ a.contact:link, a.contact:visited {
 }
 
 .socials a i:nth-child(3) {
-	color: #fff;
+	color: #ccffff;
 	cursor: pointer;
 	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 	transition: all ease-in-out 150ms;

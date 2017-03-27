@@ -2,6 +2,11 @@
 	.header {
 	   	height: 45px;
 	}
+	
+	#canvas {
+		display: none;
+	}
+	
 	.links {
         text-align: center;
 		
