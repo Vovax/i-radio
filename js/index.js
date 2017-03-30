@@ -13,6 +13,7 @@ $(document).ready(function() {
 	if ($("body").data("title") === "deep-page") {
     	song.src= 'http://93.75.217.95:8000';
     	// song.src= 'http://cast.loungefm.com.ua/terrace128';
+    	// song.src= 'http://icepe9.infomaniak.ch:80/energylounge-high.mp3';
 	} else if ($("body").data("title") === "chill-page") {
     	song.src= 'http://185.33.21.112:11085';
 	} else if ($("body").data("title") === "lounge-page") {
@@ -187,10 +188,6 @@ $(document).ready(function() {
 	};
 	
 	
-	
-	
-	
-	
     
     
   //  $("form").on( "submit", function(e) {
@@ -228,9 +225,9 @@ $(document).ready(function() {
 		};
 	
 		var dots = {
-			nb: 550,
+			nb: 50,
 			distance: 60,
-			d_radius: 100,
+			d_radius: 50,
 			array: []
 		};
 		

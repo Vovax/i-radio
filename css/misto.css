@@ -102,12 +102,12 @@ a.link_button:visited {
 .logo span {
 	color: #bdbdbd;
 	font-size: 20px;
-    margin-left: -8px;
+    margin-left: -3px;
     font-family: 'Titillium Web', sans-serif;
 }
 
 .logo img{
-	width: 135px;
+	width: 165px;
 	margin-top: -11px;
 }
 

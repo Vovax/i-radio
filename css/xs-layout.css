@@ -25,6 +25,14 @@
 	    padding: 3px 5px;
 	}
 	
+	.logo img {
+		width: 135px;
+	}
+	
+	.logo span {
+		font-size: 18px;
+	}
+	
 	.title-logo {
 		text-align: center;
 	}
