@@ -7,16 +7,20 @@
 		display: none;
 	}
 	
+	a.link_button {
+	    font-weight: 300;
+	}
+	
 	.logo {
 	    padding-top: 0;
 	}
 	
 	.logo img {
-	    width: 135px;
+	    width: 185px;
 	}
     
     .title-logo {
-     text-align: center; 
+        text-align: center; 
     }
     
     .play-window {
@@ -47,6 +51,39 @@
     .phone-tmp img {
         width: 100px;
     }
+    
+    /*___WEATHER___*/
+    
+    .panel {
+        width: 139px;
+        height: 139px;
+        padding: 16px;
+    }
+    
+    #loadSpin {
+    	padding-top: 28px;
+    }
+    
+    .fa-spinner{
+    	font-size: 50px;
+    }
+    
+    .icon, .iconBox {
+        font-size: 2.5rem;
+    }
+    
+    .location {
+        font-size: 1.5rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .weather {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    
+    /*______________*/
     
     .author {
         position: absolute;

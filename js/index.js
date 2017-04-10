@@ -90,6 +90,19 @@ $(document).ready(function() {
 		interval: 14000,
 		pause: false
 	});
+	
+	// if ( $(".item").hasClass("active") ) {
+ //       $(".weather-wrap").css("display", "block")};
+        
+        
+ //   $('.carousel-inner').each(function(){
+	//     if($(".item").hasClass('active')) {
+	//         // $(".weather-wrap").css("display", "block");
+	//         $(".weather-wrap").show();
+	//     } 
+	// });
+	
+	
    
 	
 	$(window).on('scroll', function() {
@@ -304,10 +317,131 @@ $(document).ready(function() {
 		
 		setInterval(createDots, 2000/60); 
 	};
-
+	
 	window.onload = function() {
 		canvasDots();
+	};
+	
+	// $('.weather-wrap').clone().appendTo(".item");
+	
+	function getLocation() {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition, erRor);
+		} else { 
+			$('.weather-wrap').css("display", "none");
+		}
 	}
+	getLocation();
+	
+	function erRor(err) {
+		if (err.code == 1) {
+			$('.weather-wrap').css("display", "none");
+		}
+	}
+	
+	function showPosition(position) {
+		var lat = position.coords.latitude;
+		var lon = position.coords.longitude;
+		var getLoc = 'php/getLocation.php';
+		$.ajax({
+			type:'POST',
+			url:getLoc,
+			data:'latitude='+lat+'&longitude='+lon,
+			beforeSend: function(){
+				$("#loadSpin").show();
+			},
+			success:function(msg){
+				var city = msg.split(",")[2];
+				getWeather(lat,lon,city);
+				$("#loadSpin").hide();
+			}
+		});
+	}
+	
+	function getWeather(lat,lon,city) {
+	
+	$.getJSON('https://freegeoip.net/json/',
+	
+	function(loc) {
+		showCity(city);
+		var country = loc.country_code;
+		
+		var apiURL = 'https://api.darksky.net/forecast/edd4f443633485f2acb4dde45db59e1e/'.concat(lat + ',' + lon);
+		
+		function showCity(city) {
+			if (city == " ") {
+				$('.weather-wrap').css("display", "none");
+			} else {
+				$('#city').html(city + '/');
+			}
+		}
+		
+		// $('#city').html(city + '/');
+		
+		$('#country').html(loc.country_code);
+		
+		var domain = "https://query.yahooapis.com/v1/public/yql?q=";
+		var query = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text=\"" + city + "\"" + ")";
+		var parameters = "&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
+		var url = domain + query + parameters;
+		
+		$.getJSON(url, 
+		function(weatherData) {
+			var temperature = Number(weatherData.query.results.channel.item.condition.temp);
+			var celsius = (temperature - 32) * (5/9);
+			
+			$.ajax({
+				type: 'POST',
+				dataType:'jsonp',
+				url: apiURL,
+				crossDomain: true,
+				cache: false,
+				success: function(json) {
+					
+					$('#tempF').html(Math.round(celsius) + "°C");
+						function placeIcon(icon) {
+							var icon = json.currently.icon;
+							switch (icon) {
+								case 'clear-day':
+									$('.icon.clear-day').removeClass('hide');
+									break;
+								case 'clear-night':
+									$('.icon.clear-night').removeClass('hide');
+									break;
+								case 'rain':
+									$('.icon.rain').removeClass('hide');
+									break;
+								case 'snow':
+									$('.icon.snow').removeClass('hide');
+									break;
+								case 'sleet':
+									$('.icon.sleet').removeClass('hide');
+									break;
+								case 'wind':
+									$('.icon.wind').removeClass('hide');
+									break;
+								case 'fog':
+									$('.icon.fog').removeClass('hide');
+									break;
+								case 'cloudy':
+									$('.icon.cloudy').removeClass('hide');
+									break;
+								case 'partly-cloudy-day':
+									$('.icon.partly-cloudy-day').removeClass('hide');
+									break;
+								case 'partly-cloudy-night':
+									$('.icon.partly-cloudy-night').removeClass('hide');
+									break;
+								default:
+									$('.icon.clear-day').removeClass('hide');
+							}
+						}
+						placeIcon();
+				}
+			});
+	    });	
+	});
+	};
 	
 	
 });

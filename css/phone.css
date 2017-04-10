@@ -10,6 +10,8 @@
 
     a.link_button {
         padding: 4px 8px;
+        font-size: 14px;
+        font-weight: 300;
     }
 
 	.item {
@@ -24,6 +26,43 @@
         width: 230px;
         margin-top: 3px;
     }
+    /*___WEATHER___*/
+    
+    .weather-wrap {
+        left: 23px;
+    }
+    
+    .panel {
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+    }
+    
+    #loadSpin {
+		padding-top: 20px;
+	}
+	
+	.fa-spinner{
+		font-size: 30px;
+	}
+    
+    .icon, .iconBox {
+        font-size: 2.0rem;
+        line-height: 3rem;
+    }
+    
+    .location {
+        font-size: 1.0rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .weather {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    
+    /*______________*/
 
 }
 

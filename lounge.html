@@ -5,11 +5,13 @@
     <title>Радио Misto FM Lounge, слушать радио онлайн, интернет радио, listen to misto Fm online</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Радиостанция Misto FM. Только хорошая музыка в формате lounge, deep house и chill. Слушать радио онлайн. Контакты.">
-    <meta name="keywords" content="Радио, Misto Fm, місто, мисто фм, мисто, місто фм, радіо онлайн, слушать музыку лаунж, слушать lounge, Слушать радио онлайн, online, онлайн, deep house, deep, lounge, chill-out, дип, дип хаус, хаус, чил, чил-аут, чил аут, релакс, relax, слушать лаунж онлайн, Radio, слушать лаунж онлайн">
+    <meta name="keywords" content="Радио, Misto Fm, місто, мисто фм, мисто, місто, місто фм, радіо місто, радіо онлайн, слушать музыку лаунж, слушать lounge, internet radiol, online music, radio fm, free music online, слушать радио онлайн, online, онлайн, deep house, deep, lounge, chill-out, дип, дип хаус, хаус, чил, чил-аут, чил аут, релакс, relax, слушать лаунж онлайн, Radio, слушать лаунж онлайн">
     <meta property="og:title" content="Радио Misto FM Lounge">
     <meta property="og:description" content="Радиостанция Misto FM. Только хорошая музыка в формате lounge, deep house, chill, house и лаунж. Слушать радио онлайн. Контакты.">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="css/bs/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/lounge.css">
     <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="css/xl-layout.css">
@@ -111,6 +113,33 @@
                                         <img src="images/lounge/slide6.jpg" alt="Slide 6">
                                     </div>
                                     <!--...-->
+                                    <div class="weather-wrap">
+                                        <div class="weather-content">
+                                            <div class="panel">
+                                                <div id="loadSpin">
+                                                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                                                </div>
+                                                <div class="iconBox">
+                                                    <span class="icon clear-day hide"><i class="fa fa-sun-o"></i></span>
+                                                    <span class="icon clear-night hide"><i class="fa fa-moon-o"></i></span>
+                                                    <span class="icon rain hide"><i class="fa fa-tint"></i></span>
+                                                    <span class="icon snow hide"><i class="fa fa-snowflake-o"></i></span>
+                                                    <span class="icon sleet hide"><i class="fa fa-tint"></i><i class="fa fa-snowflake-o"></i></span>
+                                                    <span class="icon wind hide"><i class="fa fa-"></i></span>
+                                                    <span class="icon fog hide"><i class="fa fa-soundcloud"></i></span>
+                                                    <span class="icon cloudy hide"><i class="fa fa-cloud"></i></span>
+                                                    <span class="icon partly-cloudy-day hide"><i class="fa fa-cloud"></i><i class="fa fa-sun-o"></i></span>
+                                                    <span class="icon partly-cloudy-night hide"><i class="fa fa-"></i><i class="fa fa-moon-o"></i></span>
+                                                </div>
+                                                <div class="location">
+                                                	<span id="city"></span><span id="country"></span>
+                                                </div>
+                                                <div class="weather">
+                                                	<span id="tempF"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
                                     <span class="prev" aria-hidden="true"></span>

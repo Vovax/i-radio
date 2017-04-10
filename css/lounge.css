@@ -72,14 +72,15 @@ a.link_button {
 	background-color: rgba(222, 222, 222, 0.25);
 	border-radius: 4px;
 	padding: 5px 12px;
-	font-family: 'Titillium Web', sans-serif;
-	color: #ffffff;
-	transition: all 0.3s ease 0s;
+	font-size: 16px;
+	font-weight: 200;
+	color: #ccffff;
+	transition: all 0.5s ease 0s;
 }
 
 a.link_button:hover, a.link_button:active {
-	color: #ffffff;
-	font-weight: 700;
+	color: #ccffff;
+	font-weight: 300;
 	letter-spacing: 1px;
 }
 
@@ -103,7 +104,8 @@ a.link_button:visited {
 	color: #bdbdbd;
 	font-size: 20px;
     margin-left: -3px;
-    font-family: 'Titillium Web', sans-serif;
+    /*font-family: 'Titillium Web', sans-serif;*/
+    font-weight: 300;
 }
 
 .logo img{
@@ -121,7 +123,8 @@ a.link_button:visited {
 
 .title-logo h5 {
 	color: #bdbdbd;
-	font-family: 'Titillium Web', sans-serif;
+	/*font-family: 'Titillium Web', sans-serif;*/
+	font-weight: 300;
 	text-shadow: 1px 1px 3px #000;
 }
 
@@ -475,18 +478,22 @@ input[type=range]::-moz-focus-outer {
 .author {
 	color: #bdbdbd;
 	padding-top: 5px;
+	font-weight: 300;
 }
 
 .author a {
 	vertical-align: center;
 	color: #F5FFF8;
-	font-family: 'Titillium Web', sans-serif;
+	/*font-family: 'Titillium Web', sans-serif;*/
+	font-weight: 300;
+	letter-spacing: 1px;
 }
 
 .author a:hover {
 	text-decoration: none;
 	color: #F5FFF8;
-	font-family: 'Titillium Web', sans-serif;
+	/*font-family: 'Titillium Web', sans-serif;*/
+	font-weight: 300;
 }
 
 .contact-us {
@@ -510,7 +517,8 @@ input[type=range]::-moz-focus-outer {
 
 .contact-us .contact {
 	padding: 5px 12px;
-	font-family: 'Titillium Web', sans-serif;
+	/*font-family: 'Titillium Web', sans-serif;*/
+	font-weight: 300;
 	color: #F5FFF8;
 	transition: all 0.3s ease 0s;
 }
@@ -521,7 +529,7 @@ input[type=range]::-moz-focus-outer {
 
 a.contact:hover, a.contact:active {
 	color: #F5FFF8;
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: 1px;
 }
 
@@ -563,6 +571,7 @@ a.contact:link, a.contact:visited {
 
 .modal-content .modal-header {
 	color: #bdbdbd;
+	font-weight: 300;
 	border: none;
 }
 
@@ -786,5 +795,73 @@ a.contact:link, a.contact:visited {
 	text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
 	transform: translate(0, -8);
 }
+
+/*__________WEATHER____________*/
+
+.weather-wrap {
+	padding-top: 0px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.weather-content {
+	position: relative;
+}
+
+.panel {
+	background-color: rgba(222, 222, 222, 0.25);
+	opacity: 0.85;
+	box-shadow:  0px 1px 2px rgba(0, 0, 0, 0.4);
+	padding: 7px;
+	text-align: center;
+	height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#loadSpin {
+	padding-top: 28px;
+}
+
+.fa-spinner{
+	color: #fff;
+}
+
+.hide {
+	display: none;
+}
+
+.icon, .iconBox {
+	font-size: 3rem;
+	line-height: 4rem;
+}
+
+.iconBox .fa {
+	/*color: #808080;*/
+	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+}
+
+.location {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Poiret One', cursive;
+}
+
+.weather {
+	font-weight: bold;
+	font-size: 2rem;
+	color: #fff;
+	font-family: 'Poiret One', cursive;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+}
+
+.iconBox .fa-sun-o, .iconBox .fa-moon-o {
+	color: #FFD700;
+}
+
+
+/*__________END____________*/
 
 
