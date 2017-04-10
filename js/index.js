@@ -342,7 +342,7 @@ $(document).ready(function() {
 	function showPosition(position) {
 		var lat = position.coords.latitude;
 		var lon = position.coords.longitude;
-		var getLoc = 'php/getLocation.php';
+		var getLoc = '/php/getLocation.php';
 		$.ajax({
 			type:'POST',
 			url:getLoc,
