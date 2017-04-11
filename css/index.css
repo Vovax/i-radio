@@ -799,6 +799,7 @@ a.contact:link, a.contact:visited {
 	padding-top: 0px;
 	position: absolute;
 	bottom: 0px;
+	display: none;
 }
 
 .weather-content {
