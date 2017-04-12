@@ -202,34 +202,34 @@ $(document).ready(function() {
 	
 	
 	
-	function radioTitle() {
-		var url = 'http://93.75.217.95:8000/json.xsl';
-		$.ajax({
-			type: 'GET',
-			url: url,
-			acync: true,
-			jsonpCallback: 'parseMusic',
-			contentType: "application/json",
-			dataType: 'jsonp',
-			success: function (json) {
-				$('#track-title').text(json["/listen"].title);
-				$('#listeners').text(json["/listen"].listeners);
-			},
-			error: function (e) {
-				console.log(e.message);
-			}
-		});
-	}
+	// function radioTitle() {
+	// 	var url = 'http://93.75.217.95:8000/json.xsl';
+	// 	$.ajax({
+	// 		type: 'GET',
+	// 		url: url,
+	// 		acync: true,
+	// 		jsonpCallback: 'parseMusic',
+	// 		contentType: "application/json",
+	// 		dataType: 'jsonp',
+	// 		success: function (json) {
+	// 			$('#track-title').text(json["/listen"].title);
+	// 			$('#listeners').text(json["/listen"].listeners);
+	// 		},
+	// 		error: function (e) {
+	// 			console.log(e.message);
+	// 		}
+	// 	});
+	// }
 	
-	function upDate() {
-		setTimeout(function() {
-			radioTitle();
-		}, 20000);
-		setInterval(function() {
-			radioTitle();
-		}, 500);
-	}
-	upDate();
+	// function upDate() {
+	// 	setTimeout(function() {
+	// 		radioTitle();
+	// 	}, 20000);
+	// 	setInterval(function() {
+	// 		radioTitle();
+	// 	}, 500);
+	// }
+	// upDate();
 	
 	
 	var canvasDots = function() {
