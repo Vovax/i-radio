@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP:SSL} !=1 [NC]
+RewriteRule ^(.*) https://www.mistofm.com.ua [L,R=301]

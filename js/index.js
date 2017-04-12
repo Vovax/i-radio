@@ -201,24 +201,36 @@ $(document).ready(function() {
 	};
 	
 	
-    
-    
-  //  $("form").on( "submit", function(e) {
-		//   e.preventDefault();
-		//   console.log($(this).serialize());
-		// });
-    
-	// $.ajax({
-	//     type: "GET",
-	//     url: "http://93.75.217.95:8000/status.xsl",
-	//     dataType: "xsl",
-	//     success: function(data) {
-	//         $(".table").html(data);
-	//     },
-	//     error: function(xhr, status) {
-	//         $(".table").html(status);
-	//     }
-	// });
+	
+	function radioTitle() {
+		var url = 'http://93.75.217.95:8000/json.xsl';
+		$.ajax({
+			type: 'GET',
+			url: url,
+			acync: true,
+			jsonpCallback: 'parseMusic',
+			contentType: "application/json",
+			dataType: 'jsonp',
+			success: function (json) {
+				$('#track-title').text(json["/listen"].title);
+				$('#listeners').text(json["/listen"].listeners);
+			},
+			error: function (e) {
+				console.log(e.message);
+			}
+		});
+	}
+	
+	function upDate() {
+		setTimeout(function() {
+			radioTitle();
+		}, 20000);
+		setInterval(function() {
+			radioTitle();
+		}, 500);
+	}
+	upDate();
+	
 	
 	var canvasDots = function() {
 		var canvas = document.querySelector('canvas'),
